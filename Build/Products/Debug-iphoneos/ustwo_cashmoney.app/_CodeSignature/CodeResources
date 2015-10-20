@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		9Mhj4b4W9U93/HzPS5c15FLFapA=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -35,7 +39,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rtzykg4PS7g3qp5LZxLMzXsSbaQ=
+			EIZbvwoKGoJCQB+5zer/2v49WhI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +57,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XRiOJixEXkzHFY12sOSxIv/yoXI=
+			Nu163yHlAImLkMag3hKW+SQQs0s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -105,6 +109,10 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		9Mhj4b4W9U93/HzPS5c15FLFapA=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -136,7 +144,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rtzykg4PS7g3qp5LZxLMzXsSbaQ=
+			EIZbvwoKGoJCQB+5zer/2v49WhI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,7 +162,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XRiOJixEXkzHFY12sOSxIv/yoXI=
+			Nu163yHlAImLkMag3hKW+SQQs0s=
 			</data>
 			<key>optional</key>
 			<true/>

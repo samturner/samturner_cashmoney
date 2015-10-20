@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "d8c2b9e7d191722c183bf683f04e2ffe"
+build_time: [498630733, 213061000]
+inputs: 
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/ViewController.swift": [498629571, 0]
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/AppDelegate.swift": [498629571, 0]
