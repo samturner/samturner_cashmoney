@@ -15,7 +15,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         amountInputField.delegate = self;
     }
 
@@ -26,10 +25,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: UITextFieldDelegate Functions
     func textFieldDidBeginEditing(textField: UITextField) {
+        // If the text field is empty, append the dollar sign
         if (textField.text == "") {
             textField.text = "$";
         }
-        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -38,7 +37,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     // ...
     
-    
     // MARK: IBACTIONS
     @IBAction func textFieldEditingDidChange(sender: AnyObject) {
         let inputAmount = amountInputField.text?.stringByReplacingOccurrencesOfString("$", withString: "").floatValue;          // Strip out $ so we can covert to a float
@@ -46,6 +44,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         amountOutputField.text = "$\(outputAmount)"
     }
+    //...
+    
+    // MARK: HELPER FUNCTIONS
+    
+    /**
+    Based on the input amount, calculate the output amount depending on the currency selected in the CurrencyPicker
+    
+    - parameter inputAmount: the amount in AUD to be converted
+    - returns: the converted amount depending on the selected currency
+    */
+    func calculateOutputAmount(inputAmount:Float) -> Float {
+        let currency = "USD";
+        
+        switch currency {
+            case "USD":
+                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.USD!
+            case "GBP":
+                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.GBP!
+            case "CAD":
+                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.CAD!
+            case "JPY":
+                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.JPY!
+            case "EUR":
+                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.EUR!
+            default:
+                return inputAmount;
+        }
+    }
+    
     //...
 }
 

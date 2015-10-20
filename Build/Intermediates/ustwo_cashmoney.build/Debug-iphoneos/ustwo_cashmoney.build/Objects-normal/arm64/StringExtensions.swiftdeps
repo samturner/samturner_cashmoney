@@ -1,21 +1,55 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "StringExtensions"
 provides-nominal:
-- "C15ustwo_cashmoney16StringExtensions"
 provides-member:
-- ["C15ustwo_cashmoney16StringExtensions", ""]
+- ["SS", ""]
+- ["SS", "floatValue"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSObject"
-- "StringExtensions"
+- "String"
+- !private "NSString"
+- "Float"
 depends-member:
-- ["PSs9AnyObject", ""]
-- ["C15ustwo_cashmoney16StringExtensions", "deinit"]
-- ["C15ustwo_cashmoney16StringExtensions", "init"]
+- !private ["PSs9AnyObject", "floatValue"]
+- !private ["PSs11CVarArgType", "floatValue"]
+- !private ["PSs23CustomStringConvertible", "floatValue"]
+- !private ["PSs9Equatable", "floatValue"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "floatValue"]
+- !private ["PSs8Hashable", "floatValue"]
+- !private ["PSo8NSCoding", "floatValue"]
+- !private ["PSo9NSCopying", "floatValue"]
+- !private ["PSo16NSMutableCopying", "floatValue"]
+- !private ["CSo8NSObject", "floatValue"]
+- !private ["PSo16NSObjectProtocol", "floatValue"]
+- !private ["PSo14NSSecureCoding", "floatValue"]
+- !private ["CSo8NSString", "floatValue"]
+- ["SS", "Float"]
+- !private ["SS", "NSString"]
+- !private ["SS", "deinit"]
+- ["SS", "floatValue"]
+- !private ["PSs24StringLiteralConvertible", "floatValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "floatValue"]
+- !private ["PSs16_CocoaStringType", "floatValue"]
+- !private ["PSs12_Reflectable", "floatValue"]
 depends-nominal:
-- "PSs9AnyObject"
-- "C15ustwo_cashmoney16StringExtensions"
+- !private "PSs9AnyObject"
+- !private "PSs11CVarArgType"
+- !private "PSs23CustomStringConvertible"
+- !private "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "SS"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -26,4 +60,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "53e6c648533f01aff66f376133a82282"
+interface-hash: "3d13ca4d0f508339d1c7bc2932d9dff0"

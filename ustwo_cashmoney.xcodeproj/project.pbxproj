@@ -17,6 +17,7 @@
 		BA7155461BD5FE080031536F /* STFixerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155451BD5FE080031536F /* STFixerCommunicator.swift */; settings = {ASSET_TAGS = (); }; };
 		BA7155481BD600DB0031536F /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155471BD600DB0031536F /* ExchangeRates.swift */; settings = {ASSET_TAGS = (); }; };
 		BA71554A1BD60F990031536F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155491BD60F990031536F /* StringExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		BA7155501BD611C40031536F /* STCurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71554F1BD611C40031536F /* STCurrencyPickerView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BA7155451BD5FE080031536F /* STFixerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STFixerCommunicator.swift; sourceTree = "<group>"; };
 		BA7155471BD600DB0031536F /* ExchangeRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
 		BA7155491BD60F990031536F /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		BA71554F1BD611C40031536F /* STCurrencyPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCurrencyPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				BA71554E1BD60FD40031536F /* communicator */,
 				BA71554D1BD60FCC0031536F /* model */,
 				BA71554B1BD60FB10031536F /* extensions */,
+				BA7155511BD611C90031536F /* view */,
 			);
 			path = ustwo_cashmoney;
 			sourceTree = "<group>";
@@ -164,6 +167,14 @@
 				BA7155451BD5FE080031536F /* STFixerCommunicator.swift */,
 			);
 			name = communicator;
+			sourceTree = "<group>";
+		};
+		BA7155511BD611C90031536F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA71554F1BD611C40031536F /* STCurrencyPickerView.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +311,7 @@
 				BA7155181BD5F6C30031536F /* ViewController.swift in Sources */,
 				BA71554A1BD60F990031536F /* StringExtensions.swift in Sources */,
 				BA7155461BD5FE080031536F /* STFixerCommunicator.swift in Sources */,
+				BA7155501BD611C40031536F /* STCurrencyPickerView.swift in Sources */,
 				BA7155161BD5F6C30031536F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
