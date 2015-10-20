@@ -4,202 +4,288 @@ provides-top-level:
 provides-nominal:
 - "C15ustwo_cashmoney14ViewController"
 provides-member:
+- ["SS", ""]
 - ["C15ustwo_cashmoney14ViewController", ""]
+- ["SS", "floatValue"]
 provides-dynamic-lookup:
-- "textFieldDidBeginEditing"
-- "didReceiveMemoryWarning"
-- "textField"
+- "textFieldEditingDidChange"
+- "textFieldShouldReturn"
 - "amountInputField"
-- "viewDidLoad"
 - "amountOutputField"
+- "textFieldDidBeginEditing"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "UITextField"
 - "String"
-- "Bool"
-- "UITextFieldDelegate"
-- !private "BooleanLiteralType"
 - !private "STFixerCommunicator"
+- !private "=="
+- !private "NSString"
+- "ViewController"
+- "AnyObject"
+- !private "*"
+- !private "StringLiteralType"
+- "Float"
+- "UILabel"
+- "Bool"
 - !private "UnicodeScalarType"
 - "UIViewController"
-- "NSRange"
-- "ViewController"
-- !private "print"
-- !private "StringLiteralType"
-- "UILabel"
+- !private "BooleanLiteralType"
+- "UITextFieldDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "STFixerCommunicator"]
+- !private ["PSs9AnyObject", "USD"]
 - ["PSs9AnyObject", "amountInputField"]
 - ["PSs9AnyObject", "amountOutputField"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "exchangeRates"]
-- !private ["PSs9AnyObject", "getLatestRates"]
+- !private ["PSs9AnyObject", "floatValue"]
 - ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "print"]
-- !private ["PSs9AnyObject", "printRates"]
+- !private ["PSs9AnyObject", "resignFirstResponder"]
 - !private ["PSs9AnyObject", "sharedCommunicator"]
+- !private ["PSs9AnyObject", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "textField"]
 - ["PSs9AnyObject", "textFieldDidBeginEditing"]
 - ["PSs9AnyObject", "textFieldDidEndEditing"]
+- ["PSs9AnyObject", "textFieldEditingDidChange"]
 - ["PSs9AnyObject", "textFieldShouldBeginEditing"]
 - ["PSs9AnyObject", "textFieldShouldClear"]
 - ["PSs9AnyObject", "textFieldShouldEndEditing"]
 - ["PSs9AnyObject", "textFieldShouldReturn"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11CVarArgType", "STFixerCommunicator"]
+- !private ["PSs11CVarArgType", "USD"]
 - ["PSs11CVarArgType", "amountInputField"]
 - ["PSs11CVarArgType", "amountOutputField"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "floatValue"]
 - ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "print"]
-- !private ["PSs11CVarArgType", "printRates"]
+- !private ["PSs11CVarArgType", "resignFirstResponder"]
+- !private ["PSs11CVarArgType", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "textField"]
 - ["PSs11CVarArgType", "textFieldDidBeginEditing"]
 - ["PSs11CVarArgType", "textFieldDidEndEditing"]
+- ["PSs11CVarArgType", "textFieldEditingDidChange"]
 - ["PSs11CVarArgType", "textFieldShouldBeginEditing"]
 - ["PSs11CVarArgType", "textFieldShouldClear"]
 - ["PSs11CVarArgType", "textFieldShouldEndEditing"]
 - ["PSs11CVarArgType", "textFieldShouldReturn"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "floatValue"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs10Comparable", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs28CustomDebugStringConvertible", "floatValue"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs23CustomStringConvertible", "STFixerCommunicator"]
+- !private ["PSs23CustomStringConvertible", "USD"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "amountInputField"]
 - ["PSs23CustomStringConvertible", "amountOutputField"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "floatValue"]
 - ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "print"]
-- !private ["PSs23CustomStringConvertible", "printRates"]
+- !private ["PSs23CustomStringConvertible", "resignFirstResponder"]
+- !private ["PSs23CustomStringConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "textField"]
 - ["PSs23CustomStringConvertible", "textFieldDidBeginEditing"]
 - ["PSs23CustomStringConvertible", "textFieldDidEndEditing"]
+- ["PSs23CustomStringConvertible", "textFieldEditingDidChange"]
 - ["PSs23CustomStringConvertible", "textFieldShouldBeginEditing"]
 - ["PSs23CustomStringConvertible", "textFieldShouldClear"]
 - ["PSs23CustomStringConvertible", "textFieldShouldEndEditing"]
 - ["PSs23CustomStringConvertible", "textFieldShouldReturn"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "STFixerCommunicator"]
+- !private ["PSs9Equatable", "USD"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "amountInputField"]
 - ["PSs9Equatable", "amountOutputField"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "floatValue"]
 - ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "print"]
-- !private ["PSs9Equatable", "printRates"]
+- !private ["PSs9Equatable", "resignFirstResponder"]
+- !private ["PSs9Equatable", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "textField"]
 - ["PSs9Equatable", "textFieldDidBeginEditing"]
 - ["PSs9Equatable", "textFieldDidEndEditing"]
+- ["PSs9Equatable", "textFieldEditingDidChange"]
 - ["PSs9Equatable", "textFieldShouldBeginEditing"]
 - ["PSs9Equatable", "textFieldShouldClear"]
 - ["PSs9Equatable", "textFieldShouldEndEditing"]
 - ["PSs9Equatable", "textFieldShouldReturn"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
-- !private ["C15ustwo_cashmoney13ExchangeRates", "printRates"]
+- !private ["C15ustwo_cashmoney13ExchangeRates", "USD"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "floatValue"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["Sf", "deinit"]
 - !private ["PSs8Hashable", "STFixerCommunicator"]
+- !private ["PSs8Hashable", "USD"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "amountInputField"]
 - ["PSs8Hashable", "amountOutputField"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "floatValue"]
 - ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "print"]
-- !private ["PSs8Hashable", "printRates"]
+- !private ["PSs8Hashable", "resignFirstResponder"]
+- !private ["PSs8Hashable", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "textField"]
 - ["PSs8Hashable", "textFieldDidBeginEditing"]
 - ["PSs8Hashable", "textFieldDidEndEditing"]
+- ["PSs8Hashable", "textFieldEditingDidChange"]
 - ["PSs8Hashable", "textFieldShouldBeginEditing"]
 - ["PSs8Hashable", "textFieldShouldClear"]
 - ["PSs8Hashable", "textFieldShouldEndEditing"]
 - ["PSs8Hashable", "textFieldShouldReturn"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs14MirrorPathType", "floatValue"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs14MirrorPathType", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo8NSCoding", "STFixerCommunicator"]
 - ["PSo8NSCoding", "amountInputField"]
 - ["PSo8NSCoding", "amountOutputField"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "floatValue"]
 - ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "resignFirstResponder"]
+- !private ["PSo8NSCoding", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textField"]
 - ["PSo8NSCoding", "textFieldDidBeginEditing"]
 - ["PSo8NSCoding", "textFieldDidEndEditing"]
+- ["PSo8NSCoding", "textFieldEditingDidChange"]
 - ["PSo8NSCoding", "textFieldShouldBeginEditing"]
 - ["PSo8NSCoding", "textFieldShouldClear"]
 - ["PSo8NSCoding", "textFieldShouldEndEditing"]
 - ["PSo8NSCoding", "textFieldShouldReturn"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "floatValue"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo26NSExtensionRequestHandling", "STFixerCommunicator"]
 - ["PSo26NSExtensionRequestHandling", "amountInputField"]
 - ["PSo26NSExtensionRequestHandling", "amountOutputField"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidBeginEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidEndEditing"]
+- ["PSo26NSExtensionRequestHandling", "textFieldEditingDidChange"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldBeginEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldClear"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldEndEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldReturn"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "floatValue"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "stringByReplacingOccurrencesOfString"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
-- ["CSo8NSObject", "NSRange"]
 - !private ["CSo8NSObject", "STFixerCommunicator"]
-- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "USD"]
 - ["CSo8NSObject", "amountInputField"]
 - ["CSo8NSObject", "amountOutputField"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "floatValue"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "print"]
-- !private ["CSo8NSObject", "printRates"]
+- !private ["CSo8NSObject", "resignFirstResponder"]
+- !private ["CSo8NSObject", "stringByReplacingOccurrencesOfString"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textField"]
 - ["CSo8NSObject", "textFieldDidBeginEditing"]
 - ["CSo8NSObject", "textFieldDidEndEditing"]
+- ["CSo8NSObject", "textFieldEditingDidChange"]
 - ["CSo8NSObject", "textFieldShouldBeginEditing"]
 - ["CSo8NSObject", "textFieldShouldClear"]
 - ["CSo8NSObject", "textFieldShouldEndEditing"]
 - ["CSo8NSObject", "textFieldShouldReturn"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "STFixerCommunicator"]
+- !private ["PSo16NSObjectProtocol", "USD"]
 - ["PSo16NSObjectProtocol", "amountInputField"]
 - ["PSo16NSObjectProtocol", "amountOutputField"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "floatValue"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "print"]
-- !private ["PSo16NSObjectProtocol", "printRates"]
+- !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
+- !private ["PSo16NSObjectProtocol", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textField"]
 - ["PSo16NSObjectProtocol", "textFieldDidBeginEditing"]
 - ["PSo16NSObjectProtocol", "textFieldDidEndEditing"]
+- ["PSo16NSObjectProtocol", "textFieldEditingDidChange"]
 - ["PSo16NSObjectProtocol", "textFieldShouldBeginEditing"]
 - ["PSo16NSObjectProtocol", "textFieldShouldClear"]
 - ["PSo16NSObjectProtocol", "textFieldShouldEndEditing"]
 - ["PSo16NSObjectProtocol", "textFieldShouldReturn"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "floatValue"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "stringByReplacingOccurrencesOfString"]
+- !private ["CSo8NSString", "floatValue"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "stringByReplacingOccurrencesOfString"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "floatValue"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs16OutputStreamType", "stringByReplacingOccurrencesOfString"]
 - !private ["C15ustwo_cashmoney19STFixerCommunicator", "exchangeRates"]
-- !private ["C15ustwo_cashmoney19STFixerCommunicator", "getLatestRates"]
 - !private ["C15ustwo_cashmoney19STFixerCommunicator", "sharedCommunicator"]
+- !private ["PSs10Streamable", "floatValue"]
+- !private ["PSs10Streamable", "init"]
+- !private ["PSs10Streamable", "stringByReplacingOccurrencesOfString"]
+- ["SS", "Float"]
+- !private ["SS", "NSString"]
+- !private ["SS", "deinit"]
+- ["SS", "floatValue"]
+- !private ["SS", "init"]
+- !private ["SS", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs30StringInterpolationConvertible", "floatValue"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs30StringInterpolationConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs24StringLiteralConvertible", "floatValue"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "STFixerCommunicator"]
 - ["PSo21UIAppearanceContainer", "amountInputField"]
@@ -207,11 +293,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textField"]
 - ["PSo21UIAppearanceContainer", "textFieldDidBeginEditing"]
 - ["PSo21UIAppearanceContainer", "textFieldDidEndEditing"]
+- ["PSo21UIAppearanceContainer", "textFieldEditingDidChange"]
 - ["PSo21UIAppearanceContainer", "textFieldShouldBeginEditing"]
 - ["PSo21UIAppearanceContainer", "textFieldShouldClear"]
 - ["PSo21UIAppearanceContainer", "textFieldShouldEndEditing"]
@@ -223,10 +310,10 @@ depends-member:
 - ["PSo18UIContentContainer", "amountOutputField"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "textField"]
 - ["PSo18UIContentContainer", "textFieldDidBeginEditing"]
 - ["PSo18UIContentContainer", "textFieldDidEndEditing"]
+- ["PSo18UIContentContainer", "textFieldEditingDidChange"]
 - ["PSo18UIContentContainer", "textFieldShouldBeginEditing"]
 - ["PSo18UIContentContainer", "textFieldShouldClear"]
 - ["PSo18UIContentContainer", "textFieldShouldEndEditing"]
@@ -234,17 +321,21 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "delegate"]
+- !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo10UIKeyInput", "delegate"]
+- !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
-- ["CSo11UIResponder", "NSRange"]
 - !private ["CSo11UIResponder", "STFixerCommunicator"]
-- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "amountInputField"]
@@ -252,11 +343,12 @@ depends-member:
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "resignFirstResponder"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textField"]
 - ["CSo11UIResponder", "textFieldDidBeginEditing"]
 - ["CSo11UIResponder", "textFieldDidEndEditing"]
+- ["CSo11UIResponder", "textFieldEditingDidChange"]
 - ["CSo11UIResponder", "textFieldShouldBeginEditing"]
 - ["CSo11UIResponder", "textFieldShouldClear"]
 - ["CSo11UIResponder", "textFieldShouldEndEditing"]
@@ -267,10 +359,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "amountOutputField"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "textField"]
 - ["PSo16UIStateRestoring", "textFieldDidBeginEditing"]
 - ["PSo16UIStateRestoring", "textFieldDidEndEditing"]
+- ["PSo16UIStateRestoring", "textFieldEditingDidChange"]
 - ["PSo16UIStateRestoring", "textFieldShouldBeginEditing"]
 - ["PSo16UIStateRestoring", "textFieldShouldClear"]
 - ["PSo16UIStateRestoring", "textFieldShouldEndEditing"]
@@ -278,10 +370,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "delegate"]
+- !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "STFixerCommunicator"]
 - !private ["PSo19UITextFieldDelegate", "amountInputField"]
-- !private ["PSo19UITextFieldDelegate", "print"]
+- !private ["PSo19UITextFieldDelegate", "amountOutputField"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldDidEndEditing"]
@@ -291,8 +384,10 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "textFieldShouldReturn"]
 - ["PSo19UITextFieldDelegate", ""]
 - !private ["PSo11UITextInput", "delegate"]
+- !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "delegate"]
+- !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "STFixerCommunicator"]
 - ["PSo18UITraitEnvironment", "amountInputField"]
@@ -300,11 +395,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textField"]
 - ["PSo18UITraitEnvironment", "textFieldDidBeginEditing"]
 - ["PSo18UITraitEnvironment", "textFieldDidEndEditing"]
+- ["PSo18UITraitEnvironment", "textFieldEditingDidChange"]
 - ["PSo18UITraitEnvironment", "textFieldShouldBeginEditing"]
 - ["PSo18UITraitEnvironment", "textFieldShouldClear"]
 - ["PSo18UITraitEnvironment", "textFieldShouldEndEditing"]
@@ -312,31 +408,39 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
-- ["CSo16UIViewController", "NSRange"]
 - !private ["CSo16UIViewController", "STFixerCommunicator"]
-- ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "amountInputField"]
 - ["CSo16UIViewController", "amountOutputField"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "textField"]
 - ["CSo16UIViewController", "textFieldDidBeginEditing"]
 - ["CSo16UIViewController", "textFieldDidEndEditing"]
+- ["CSo16UIViewController", "textFieldEditingDidChange"]
 - ["CSo16UIViewController", "textFieldShouldBeginEditing"]
 - ["CSo16UIViewController", "textFieldShouldClear"]
 - ["CSo16UIViewController", "textFieldShouldEndEditing"]
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "floatValue"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- ["C15ustwo_cashmoney14ViewController", "AnyObject"]
 - ["C15ustwo_cashmoney14ViewController", "Bool"]
-- ["C15ustwo_cashmoney14ViewController", "NSRange"]
 - !private ["C15ustwo_cashmoney14ViewController", "STFixerCommunicator"]
-- ["C15ustwo_cashmoney14ViewController", "String"]
 - ["C15ustwo_cashmoney14ViewController", "UILabel"]
 - ["C15ustwo_cashmoney14ViewController", "UITextField"]
 - ["C15ustwo_cashmoney14ViewController", "amountInputField"]
@@ -344,30 +448,80 @@ depends-member:
 - ["C15ustwo_cashmoney14ViewController", "deinit"]
 - ["C15ustwo_cashmoney14ViewController", "didReceiveMemoryWarning"]
 - ["C15ustwo_cashmoney14ViewController", "init"]
-- !private ["C15ustwo_cashmoney14ViewController", "print"]
 - ["C15ustwo_cashmoney14ViewController", "textField"]
 - ["C15ustwo_cashmoney14ViewController", "textFieldDidBeginEditing"]
 - ["C15ustwo_cashmoney14ViewController", "textFieldDidEndEditing"]
+- ["C15ustwo_cashmoney14ViewController", "textFieldEditingDidChange"]
 - ["C15ustwo_cashmoney14ViewController", "textFieldShouldBeginEditing"]
 - ["C15ustwo_cashmoney14ViewController", "textFieldShouldClear"]
 - ["C15ustwo_cashmoney14ViewController", "textFieldShouldEndEditing"]
 - ["C15ustwo_cashmoney14ViewController", "textFieldShouldReturn"]
 - ["C15ustwo_cashmoney14ViewController", "viewDidLoad"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "floatValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "floatValue"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "floatValue"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "floatValue"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs16_CocoaStringType", "floatValue"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs16_CocoaStringType", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "floatValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "stringByReplacingOccurrencesOfString"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "delegate"]
+- !private ["PSs12_Reflectable", "floatValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "resignFirstResponder"]
+- !private ["PSs12_Reflectable", "stringByReplacingOccurrencesOfString"]
 - !private ["PSs12_Reflectable", "text"]
 depends-nominal:
 - "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
 - "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "Sd"
 - "PSs9Equatable"
 - !private "C15ustwo_cashmoney13ExchangeRates"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - "PSs8Hashable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs14MirrorPathType"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Sq"
+- !private "PSs16OutputStreamType"
 - !private "C15ustwo_cashmoney19STFixerCommunicator"
+- !private "PSs10Streamable"
+- "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -376,6 +530,7 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - !private "CSo11UITextField"
@@ -385,7 +540,22 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
 - "C15ustwo_cashmoney14ViewController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
 - !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
@@ -397,4 +567,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "ea1ac976f56305b9f975e9b2af261458"
+interface-hash: "dcc9e1c2e132bbdd0ebe73f9a533c5c4"

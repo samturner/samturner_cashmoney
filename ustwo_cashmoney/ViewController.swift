@@ -15,9 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        STFixerCommunicator.sharedCommunicator.getLatestRates();            // Get the latest rates from fixer
-        
+
         amountInputField.delegate = self;
     }
 
@@ -26,26 +24,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     // MARK: UITextFieldDelegate Functions
     func textFieldDidBeginEditing(textField: UITextField) {
-        print("USER BEGAN EDITING")
-        textField.text = "$"                // Make sure the $ is shown at the front of the text
+        if (textField.text == "") {
+            textField.text = "$";
+        }
+        
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        print("USER TYPED SOMETHING")
-        
-        // TODO: Calculate the new value based on the exchange rate
-        
-        STFixerCommunicator.sharedCommunicator.exchangeRates.printRates()       // Print the exchange rates
-        
-        
-        // Just assuming converting to USD to for nows
-        
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder();
         return true;
     }
     // ...
+    
+    
+    // MARK: IBACTIONS
+    @IBAction func textFieldEditingDidChange(sender: AnyObject) {
+        let inputAmount = amountInputField.text?.stringByReplacingOccurrencesOfString("$", withString: "").floatValue;          // Strip out $ so we can covert to a float
+        let outputAmount = inputAmount! * STFixerCommunicator.sharedCommunicator.exchangeRates.USD!                             // Multiply the input value by whatever currency is selected
+        
+        amountOutputField.text = "$\(outputAmount)"
+    }
+    //...
 }
 

@@ -88,7 +88,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -129,7 +128,8 @@ SWIFT_CLASS("_TtC15ustwo_cashmoney14ViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidBeginEditing:(UITextField * __nonnull)textField;
-- (BOOL)textField:(UITextField * __nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * __nonnull)string;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (IBAction)textFieldEditingDidChange:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

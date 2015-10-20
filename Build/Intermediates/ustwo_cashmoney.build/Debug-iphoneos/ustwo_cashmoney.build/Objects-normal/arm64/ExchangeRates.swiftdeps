@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C15ustwo_cashmoney13ExchangeRates", ""]
 provides-dynamic-lookup:
-- "updateRates"
 - "printRates"
+- "updateRates"
 depends-top-level:
 - !private "StringLiteralType"
 - "NSObject"
-- "Float"
 - !private "print"
-- "AnyObject"
 - "ExchangeRates"
+- "AnyObject"
+- "Float"
 depends-member:
 - ["PSs9AnyObject", "CAD"]
 - ["PSs9AnyObject", "EUR"]
