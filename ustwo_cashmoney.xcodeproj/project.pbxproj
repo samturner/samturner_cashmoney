@@ -14,6 +14,8 @@
 		BA7155201BD5F6C30031536F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA71551E1BD5F6C30031536F /* LaunchScreen.storyboard */; };
 		BA71552B1BD5F6C30031536F /* ustwo_cashmoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71552A1BD5F6C30031536F /* ustwo_cashmoneyTests.swift */; };
 		BA7155361BD5F6C30031536F /* ustwo_cashmoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155351BD5F6C30031536F /* ustwo_cashmoneyUITests.swift */; };
+		BA7155461BD5FE080031536F /* STFixerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155451BD5FE080031536F /* STFixerCommunicator.swift */; settings = {ASSET_TAGS = (); }; };
+		BA7155481BD600DB0031536F /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155471BD600DB0031536F /* ExchangeRates.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BA7155311BD5F6C30031536F /* ustwo_cashmoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ustwo_cashmoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7155351BD5F6C30031536F /* ustwo_cashmoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ustwo_cashmoneyUITests.swift; sourceTree = "<group>"; };
 		BA7155371BD5F6C30031536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7155451BD5FE080031536F /* STFixerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STFixerCommunicator.swift; sourceTree = "<group>"; };
+		BA7155471BD600DB0031536F /* ExchangeRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				BA71551C1BD5F6C30031536F /* Assets.xcassets */,
 				BA71551E1BD5F6C30031536F /* LaunchScreen.storyboard */,
 				BA7155211BD5F6C30031536F /* Info.plist */,
+				BA7155451BD5FE080031536F /* STFixerCommunicator.swift */,
+				BA7155471BD600DB0031536F /* ExchangeRates.swift */,
 			);
 			path = ustwo_cashmoney;
 			sourceTree = "<group>";
@@ -255,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7155481BD600DB0031536F /* ExchangeRates.swift in Sources */,
 				BA7155181BD5F6C30031536F /* ViewController.swift in Sources */,
+				BA7155461BD5FE080031536F /* STFixerCommunicator.swift in Sources */,
 				BA7155161BD5F6C30031536F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

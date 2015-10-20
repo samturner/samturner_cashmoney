@@ -21,7 +21,7 @@
                                 <rect key="frame" x="205" y="40" width="191" height="20"/>
                                 <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="$0" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-Xy-OYZ" userLabel="inputTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-Xy-OYZ" userLabel="inputTextField">
                                 <rect key="frame" x="20" y="197" width="560" height="86"/>
                                 <animations/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

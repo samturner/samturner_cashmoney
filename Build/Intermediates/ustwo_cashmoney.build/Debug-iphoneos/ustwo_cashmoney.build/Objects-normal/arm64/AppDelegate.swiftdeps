@@ -7,22 +7,22 @@ provides-member:
 - ["C15ustwo_cashmoney11AppDelegate", ""]
 provides-dynamic-lookup:
 - "applicationWillResignActive"
-- "applicationDidEnterBackground"
-- "application"
-- "applicationWillTerminate"
-- "applicationDidBecomeActive"
 - "applicationWillEnterForeground"
 - "window"
+- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
+- "application"
+- "applicationWillTerminate"
 depends-top-level:
-- "UIResponder"
-- "AppDelegate"
-- !private "BooleanLiteralType"
-- "AnyObject"
-- "Bool"
-- "UIApplication"
 - "UIApplicationDelegate"
-- "UIWindow"
 - "NSObject"
+- "UIApplication"
+- "Bool"
+- "UIWindow"
+- !private "BooleanLiteralType"
+- "AppDelegate"
+- "AnyObject"
+- "UIResponder"
 depends-member:
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]

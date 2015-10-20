@@ -87,6 +87,8 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -107,13 +109,27 @@ SWIFT_CLASS("_TtC15ustwo_cashmoney11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC15ustwo_cashmoney13ExchangeRates")
+@interface ExchangeRates : NSObject
+- (void)updateRates:(id __nullable)data;
+- (void)printRates;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15ustwo_cashmoney14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic) IBOutlet UITextField * __null_unspecified amountInputField;
+@property (nonatomic) IBOutlet UILabel * __null_unspecified amountOutputField;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)textFieldDidBeginEditing:(UITextField * __nonnull)textField;
+- (BOOL)textField:(UITextField * __nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * __nonnull)string;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
