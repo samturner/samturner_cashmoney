@@ -120,8 +120,11 @@ SWIFT_CLASS("_TtC15ustwo_cashmoney13ExchangeRates")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15ustwo_cashmoney20STCurrencyPickerView")
-@interface STCurrencyPickerView : UIScrollView
+@interface STCurrencyPickerView : UIScrollView <UIScrollViewDelegate>
+@property (nonatomic, readonly) NSInteger CURRENCY_WIDTH;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull currencies;
 - (void)initialise;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * __nonnull)scrollView;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -134,18 +137,34 @@ SWIFT_CLASS("_TtC15ustwo_cashmoney14ViewController")
 @interface ViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic) IBOutlet UITextField * __null_unspecified amountInputField;
 @property (nonatomic) IBOutlet UILabel * __null_unspecified amountOutputField;
+@property (nonatomic) IBOutlet STCurrencyPickerView * __null_unspecified currencyPickerView;
+@property (nonatomic, copy) NSString * __nonnull selectedCurrency;
+@property (nonatomic) float inputAmount;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)updatedCurrency:(NSString * __nonnull)currency;
 - (void)textFieldDidBeginEditing:(UITextField * __nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+
+/// When the text field changes, update the value that is displayed at the bottom
+///
+/// \param sender sender
 - (IBAction)textFieldEditingDidChange:(id __nonnull)sender;
+
+///  Carry out the calculations and then update the text fields
+- (void)updateConvertedValue;
 
 /// Based on the input amount, calculate the output amount depending on the currency selected in the CurrencyPicker
 ///
 /// \param inputAmount the amount in AUD to be converted
 ///
 /// \returns  the converted amount depending on the selected currency
-- (float)calculateOutputAmount:(float)inputAmount;
+- (float)calculateOutputAmount:(float)inputAmount currency:(NSString * __nonnull)currency;
+
+/// Calculates the correct current symbol based on the currency that is selected
+///
+/// \returns  A string containing the correct currency symbol
+- (NSString * __nonnull)calculateCurrencySymbol:(NSString * __nonnull)currency;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

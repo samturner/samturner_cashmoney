@@ -120,10 +120,13 @@ SWIFT_CLASS("_TtC15ustwo_cashmoney13ExchangeRates")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15ustwo_cashmoney20STCurrencyPickerView")
-@interface STCurrencyPickerView : UIScrollView
+@interface STCurrencyPickerView : UIScrollView <UIScrollViewDelegate>
+@property (nonatomic, readonly) NSInteger CURRENCY_WIDTH;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * __nonnull currencies;
+- (void)initialise;
+- (void)scrollViewDidEndDecelerating:(UIScrollView * __nonnull)scrollView;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (void)drawRect:(CGRect)rect;
 @end
 
 @class UITextField;

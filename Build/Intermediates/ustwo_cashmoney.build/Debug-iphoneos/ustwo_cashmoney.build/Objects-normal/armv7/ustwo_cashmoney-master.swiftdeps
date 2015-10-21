@@ -1,0 +1,10 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "afa71d63110e504119f252a72bd6e3a9"
+build_time: [498711097, 377170000]
+inputs: 
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/AppDelegate.swift": [498635615, 0]
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/ExchangeRates.swift": [498634531, 0]
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/StringExtensions.swift": [498635949, 0]
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/STCurrencyPickerView.swift": [498638831, 0]
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/STFixerCommunicator.swift": [498634509, 0]
+	"/Users/samturner/Projects/ustwo_cashmoney/ustwo_cashmoney/ViewController.swift": [498636433, 0]
