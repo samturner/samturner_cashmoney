@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -75,11 +75,16 @@
                                     <action selector="textFieldEditingDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="mvf-m1-MJH"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dashed-line" translatesAutoresizingMaskIntoConstraints="NO" id="B75-Qd-n9B">
+                                <rect key="frame" x="163" y="278" width="275" height="3"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.22745098039215686" green="0.80784313725490198" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="2S3-qk-V5G" secondAttribute="leading" id="4w8-ir-H7Z"/>
+                            <constraint firstItem="B75-Qd-n9B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ra-lz-z87"/>
                             <constraint firstAttribute="leadingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="leading" id="5d0-Ya-dr0"/>
                             <constraint firstItem="yUm-hq-Qg1" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="96y-B8-oD8"/>
                             <constraint firstItem="Iav-Gj-CxU" firstAttribute="top" relation="lessThanOrEqual" secondItem="yUm-hq-Qg1" secondAttribute="bottom" constant="50" id="Bhd-6T-Fwv"/>
@@ -87,6 +92,7 @@
                             <constraint firstItem="2S3-qk-V5G" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="bottom" constant="27" id="CA4-aI-gh5"/>
                             <constraint firstItem="Osr-de-lSK" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="41" id="CTA-dm-fxC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="trailing" id="Euy-0h-0Wm"/>
+                            <constraint firstItem="B75-Qd-n9B" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="-5" id="G33-SV-3Y4"/>
                             <constraint firstItem="Osr-de-lSK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="GCv-VC-qE2"/>
                             <constraint firstItem="2S3-qk-V5G" firstAttribute="top" relation="lessThanOrEqual" secondItem="pMY-em-54b" secondAttribute="bottom" constant="27" id="RUR-sc-ueX"/>
                             <constraint firstItem="Osr-de-lSK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USJ-Gl-bsr"/>
@@ -113,6 +119,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="191" height="20"/>
+        <image name="dashed-line" width="275" height="5"/>
         <image name="indicator_down" width="20" height="14"/>
         <image name="indicator_up" width="20" height="14"/>
     </resources>
