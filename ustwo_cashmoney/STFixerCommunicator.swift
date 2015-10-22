@@ -11,9 +11,11 @@ import Foundation
 class STFixerCommunicator {
     
     static let sharedCommunicator = STFixerCommunicator()               // STFixerCommunicator should be a singleton and can be reused across multiple views
-    
     let exchangeRates = ExchangeRates();                                // Stores the relevant exchange rates
     
+    /**
+    Call the Fixer api and get the latest rates and attempt to send them to our ExchangeRates object
+    */
     func getLatestRates() {
         let url = NSURL(string: "http://api.fixer.io/latest?symbols=CAD,EUR,GBP,JPY,USD&base=AUD");         // Only get the rates that we actually require
         let request = NSURLRequest(URL: url!)

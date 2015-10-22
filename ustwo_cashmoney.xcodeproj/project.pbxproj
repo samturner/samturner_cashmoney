@@ -12,12 +12,11 @@
 		BA71551B1BD5F6C30031536F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7155191BD5F6C30031536F /* Main.storyboard */; };
 		BA71551D1BD5F6C30031536F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA71551C1BD5F6C30031536F /* Assets.xcassets */; };
 		BA7155201BD5F6C30031536F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA71551E1BD5F6C30031536F /* LaunchScreen.storyboard */; };
-		BA71552B1BD5F6C30031536F /* ustwo_cashmoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71552A1BD5F6C30031536F /* ustwo_cashmoneyTests.swift */; };
 		BA7155361BD5F6C30031536F /* ustwo_cashmoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155351BD5F6C30031536F /* ustwo_cashmoneyUITests.swift */; };
-		BA7155461BD5FE080031536F /* STFixerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155451BD5FE080031536F /* STFixerCommunicator.swift */; settings = {ASSET_TAGS = (); }; };
-		BA7155481BD600DB0031536F /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155471BD600DB0031536F /* ExchangeRates.swift */; settings = {ASSET_TAGS = (); }; };
-		BA71554A1BD60F990031536F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155491BD60F990031536F /* StringExtensions.swift */; settings = {ASSET_TAGS = (); }; };
-		BA7155501BD611C40031536F /* STCurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71554F1BD611C40031536F /* STCurrencyPickerView.swift */; settings = {ASSET_TAGS = (); }; };
+		BA7155461BD5FE080031536F /* STFixerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155451BD5FE080031536F /* STFixerCommunicator.swift */; };
+		BA7155481BD600DB0031536F /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155471BD600DB0031536F /* ExchangeRates.swift */; };
+		BA71554A1BD60F990031536F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7155491BD60F990031536F /* StringExtensions.swift */; };
+		BA7155501BD611C40031536F /* STCurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71554F1BD611C40031536F /* STCurrencyPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +45,6 @@
 		BA71551F1BD5F6C30031536F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA7155211BD5F6C30031536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA7155261BD5F6C30031536F /* ustwo_cashmoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ustwo_cashmoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA71552A1BD5F6C30031536F /* ustwo_cashmoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ustwo_cashmoneyTests.swift; sourceTree = "<group>"; };
-		BA71552C1BD5F6C30031536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA7155311BD5F6C30031536F /* ustwo_cashmoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ustwo_cashmoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7155351BD5F6C30031536F /* ustwo_cashmoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ustwo_cashmoneyUITests.swift; sourceTree = "<group>"; };
 		BA7155371BD5F6C30031536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				BA7155141BD5F6C30031536F /* ustwo_cashmoney */,
-				BA7155291BD5F6C30031536F /* ustwo_cashmoneyTests */,
 				BA7155341BD5F6C30031536F /* ustwo_cashmoneyUITests */,
 				BA7155131BD5F6C30031536F /* Products */,
 			);
@@ -117,15 +113,6 @@
 				BA7155511BD611C90031536F /* view */,
 			);
 			path = ustwo_cashmoney;
-			sourceTree = "<group>";
-		};
-		BA7155291BD5F6C30031536F /* ustwo_cashmoneyTests */ = {
-			isa = PBXGroup;
-			children = (
-				BA71552A1BD5F6C30031536F /* ustwo_cashmoneyTests.swift */,
-				BA71552C1BD5F6C30031536F /* Info.plist */,
-			);
-			path = ustwo_cashmoneyTests;
 			sourceTree = "<group>";
 		};
 		BA7155341BD5F6C30031536F /* ustwo_cashmoneyUITests */ = {
@@ -320,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA71552B1BD5F6C30031536F /* ustwo_cashmoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +523,7 @@
 				BA71553C1BD5F6C30031536F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA71553D1BD5F6C30031536F /* Build configuration list for PBXNativeTarget "ustwo_cashmoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +532,7 @@
 				BA71553F1BD5F6C30031536F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA7155401BD5F6C30031536F /* Build configuration list for PBXNativeTarget "ustwo_cashmoneyUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +541,7 @@
 				BA7155421BD5F6C30031536F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

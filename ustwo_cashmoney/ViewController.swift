@@ -89,18 +89,17 @@ class ViewController: UIViewController, UITextFieldDelegate, STCurrencyPickerVie
     - returns: the converted amount depending on the selected currency
     */
     func calculateOutputAmount(inputAmount:Float, currency:String) -> Float {
-        
         switch currency {
             case "USD":
-                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.USD!
+                return round(inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.USD!)
             case "GBP":
-                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.GBP!
+                return round(inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.GBP!)
             case "CAD":
-                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.CAD!
+                return round(inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.CAD!)
             case "JPY":
-                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.JPY!
+                return round(inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.JPY!)
             case "EUR":
-                return inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.EUR!
+                return round(inputAmount * STFixerCommunicator.sharedCommunicator.exchangeRates.EUR!)
             default:
                 return inputAmount;
         }
@@ -125,7 +124,7 @@ class ViewController: UIViewController, UITextFieldDelegate, STCurrencyPickerVie
             return "$"
         }
     }
-    
+
     //...
 }
 
