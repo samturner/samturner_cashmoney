@@ -6,9 +6,9 @@ provides-member:
 - ["SS", "floatValue"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSString"
 - "Float"
 - "String"
+- !private "NSString"
 depends-member:
 - !private ["PSs9AnyObject", "floatValue"]
 - !private ["PSs11CVarArgType", "floatValue"]

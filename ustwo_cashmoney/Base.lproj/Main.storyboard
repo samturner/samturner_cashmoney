@@ -17,57 +17,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yUm-hq-Qg1" userLabel="cashMoneyLogo">
-                                <rect key="frame" x="205" y="40" width="191" height="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yUm-hq-Qg1" userLabel="cashMoneyLogo">
+                                <rect key="frame" x="40" y="40" width="520" height="20"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="43x-V6-Rxi"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-Gj-CxU" userLabel="fromCurrencyLbl">
-                                <rect key="frame" x="20" y="110" width="560" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-Gj-CxU" userLabel="fromCurrencyLbl">
+                                <rect key="frame" x="20" y="80" width="560" height="67"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="50" id="xJ3-fK-o9Z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="56"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osr-de-lSK">
-                                <rect key="frame" x="0.0" y="324" width="600" height="130"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-qk-V5G" userLabel="outputLbl">
+                                <rect key="frame" x="20" y="513" width="560" height="67"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="3qI-ih-oUo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashed-line" translatesAutoresizingMaskIntoConstraints="NO" id="B75-Qd-n9B">
+                                <rect key="frame" x="40" y="241" width="520" height="3"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="Tnk-7z-fAV"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osr-de-lSK" userLabel="Currency Background">
+                                <rect key="frame" x="0.0" y="378" width="600" height="125"/>
                                 <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMY-em-54b" customClass="STCurrencyPickerView" customModule="ustwo_cashmoney" customModuleProvider="target">
+                                        <rect key="frame" x="225" y="0.0" width="150" height="125"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="r29-EO-7nO"/>
+                                        </constraints>
+                                    </scrollView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator_down" translatesAutoresizingMaskIntoConstraints="NO" id="O7J-xK-P7P">
-                                        <rect key="frame" x="290" y="0.0" width="20" height="14"/>
+                                        <rect key="frame" x="290" y="0.0" width="20" height="10"/>
                                         <animations/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator_up" translatesAutoresizingMaskIntoConstraints="NO" id="OmM-KB-3aC">
-                                        <rect key="frame" x="290" y="115" width="20" height="14"/>
+                                        <rect key="frame" x="290" y="115" width="20" height="10"/>
                                         <animations/>
                                     </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.23137254900000001" green="0.75686274509999996" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="OmM-KB-3aC" secondAttribute="bottom" constant="1" id="IXM-3B-slT"/>
-                                    <constraint firstItem="O7J-xK-P7P" firstAttribute="centerX" secondItem="Osr-de-lSK" secondAttribute="centerX" id="erS-ZH-pre"/>
-                                    <constraint firstItem="O7J-xK-P7P" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="top" id="iHV-yH-9cA"/>
-                                    <constraint firstItem="OmM-KB-3aC" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="top" constant="115" id="jU8-xy-PZp"/>
-                                    <constraint firstItem="OmM-KB-3aC" firstAttribute="centerX" secondItem="Osr-de-lSK" secondAttribute="centerX" id="otE-a2-x2T"/>
+                                    <constraint firstItem="pMY-em-54b" firstAttribute="height" secondItem="Osr-de-lSK" secondAttribute="height" id="055-3y-BU2"/>
+                                    <constraint firstAttribute="bottom" secondItem="pMY-em-54b" secondAttribute="bottom" id="0SV-dq-W9U"/>
+                                    <constraint firstItem="OmM-KB-3aC" firstAttribute="centerX" secondItem="Osr-de-lSK" secondAttribute="centerX" id="C5K-ue-6Iq"/>
+                                    <constraint firstItem="pMY-em-54b" firstAttribute="centerY" secondItem="Osr-de-lSK" secondAttribute="centerY" id="IHf-xT-EEf"/>
+                                    <constraint firstItem="O7J-xK-P7P" firstAttribute="width" secondItem="OmM-KB-3aC" secondAttribute="width" id="K6m-tM-vNF"/>
+                                    <constraint firstAttribute="bottom" secondItem="OmM-KB-3aC" secondAttribute="bottom" id="Pqr-rF-1N9"/>
+                                    <constraint firstItem="OmM-KB-3aC" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="top" constant="115" id="RQW-nb-pDA"/>
+                                    <constraint firstItem="O7J-xK-P7P" firstAttribute="centerX" secondItem="Osr-de-lSK" secondAttribute="centerX" id="Ucd-r0-et5"/>
+                                    <constraint firstItem="O7J-xK-P7P" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="top" id="d5Z-hK-u8K"/>
+                                    <constraint firstAttribute="height" constant="125" id="fss-9a-Jpc"/>
+                                    <constraint firstItem="O7J-xK-P7P" firstAttribute="height" secondItem="OmM-KB-3aC" secondAttribute="height" id="lLL-W0-eON"/>
+                                    <constraint firstItem="pMY-em-54b" firstAttribute="centerX" secondItem="Osr-de-lSK" secondAttribute="centerX" id="tfQ-am-wkx"/>
+                                    <constraint firstItem="pMY-em-54b" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="top" id="xU8-db-559"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pMY-em-54b" customClass="STCurrencyPickerView" customModule="ustwo_cashmoney" customModuleProvider="target">
-                                <rect key="frame" x="225" y="326" width="150" height="128"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-Xy-OYZ" userLabel="inputTextField">
+                                <rect key="frame" x="20" y="167" width="560" height="67"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Sgh-ag-4AP"/>
-                                    <constraint firstAttribute="height" constant="128" id="gyi-fg-yL9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="67" id="FBz-dL-huE"/>
                                 </constraints>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-qk-V5G" userLabel="outputLbl">
-                                <rect key="frame" x="20" y="481" width="560" height="67"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="56"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-Xy-OYZ" userLabel="inputTextField">
-                                <rect key="frame" x="20" y="197" width="560" height="86"/>
-                                <animations/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -75,40 +101,35 @@
                                     <action selector="textFieldEditingDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="mvf-m1-MJH"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dashed-line" translatesAutoresizingMaskIntoConstraints="NO" id="B75-Qd-n9B">
-                                <rect key="frame" x="163" y="278" width="275" height="3"/>
-                                <animations/>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.22745098039215686" green="0.80784313725490198" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="2S3-qk-V5G" secondAttribute="leading" id="4w8-ir-H7Z"/>
-                            <constraint firstItem="B75-Qd-n9B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ra-lz-z87"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="leading" id="5d0-Ya-dr0"/>
-                            <constraint firstItem="yUm-hq-Qg1" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="96y-B8-oD8"/>
-                            <constraint firstItem="Iav-Gj-CxU" firstAttribute="top" relation="lessThanOrEqual" secondItem="yUm-hq-Qg1" secondAttribute="bottom" constant="50" id="Bhd-6T-Fwv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="lessThanOrEqual" secondItem="2S3-qk-V5G" secondAttribute="bottom" constant="52" id="C4S-cl-UUY"/>
-                            <constraint firstItem="2S3-qk-V5G" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="bottom" constant="27" id="CA4-aI-gh5"/>
-                            <constraint firstItem="Osr-de-lSK" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="41" id="CTA-dm-fxC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="trailing" id="Euy-0h-0Wm"/>
-                            <constraint firstItem="B75-Qd-n9B" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="-5" id="G33-SV-3Y4"/>
-                            <constraint firstItem="Osr-de-lSK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="GCv-VC-qE2"/>
-                            <constraint firstItem="2S3-qk-V5G" firstAttribute="top" relation="lessThanOrEqual" secondItem="pMY-em-54b" secondAttribute="bottom" constant="27" id="RUR-sc-ueX"/>
-                            <constraint firstItem="Osr-de-lSK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USJ-Gl-bsr"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Iav-Gj-CxU" secondAttribute="leading" id="YgU-sH-r38"/>
-                            <constraint firstItem="pMY-em-54b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLO-iV-Tl1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Osr-de-lSK" secondAttribute="trailing" constant="-20" id="cDI-6O-L3w"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Iav-Gj-CxU" secondAttribute="trailing" id="hYj-vT-eEg"/>
-                            <constraint firstItem="yUm-hq-Qg1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kPe-lE-L2O"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2S3-qk-V5G" secondAttribute="trailing" id="kZA-Dn-Fu2"/>
-                            <constraint firstItem="pMY-em-54b" firstAttribute="top" relation="lessThanOrEqual" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="50" id="xqQ-z4-yBl"/>
-                            <constraint firstItem="VbQ-Xy-OYZ" firstAttribute="top" relation="lessThanOrEqual" secondItem="Iav-Gj-CxU" secondAttribute="bottom" constant="20" id="y9g-AJ-u2X"/>
+                            <constraint firstItem="Iav-Gj-CxU" firstAttribute="top" secondItem="yUm-hq-Qg1" secondAttribute="bottom" constant="20" id="0Ny-g9-omK"/>
+                            <constraint firstItem="Osr-de-lSK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1IH-Cg-buu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B75-Qd-n9B" secondAttribute="trailing" constant="20" id="6FT-5L-zsq"/>
+                            <constraint firstItem="yUm-hq-Qg1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6I4-PN-cUZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2S3-qk-V5G" secondAttribute="trailing" id="6QE-tP-IFW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Osr-de-lSK" secondAttribute="trailing" constant="-20" id="AqP-ON-BUm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yUm-hq-Qg1" secondAttribute="trailing" constant="20" id="FXf-gU-ZIP"/>
+                            <constraint firstItem="B75-Qd-n9B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Hau-AB-Z6i"/>
+                            <constraint firstItem="B75-Qd-n9B" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="7" id="N1F-En-h0A"/>
+                            <constraint firstItem="Osr-de-lSK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B75-Qd-n9B" secondAttribute="bottom" constant="40" id="OxR-gM-Gqf"/>
+                            <constraint firstItem="VbQ-Xy-OYZ" firstAttribute="top" secondItem="Iav-Gj-CxU" secondAttribute="bottom" constant="20" id="Tz2-Z6-iPq"/>
+                            <constraint firstItem="yUm-hq-Qg1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cNe-Ev-77K"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="leading" id="dbR-tI-RsW"/>
+                            <constraint firstItem="2S3-qk-V5G" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="bottom" constant="10" id="fRw-pD-CFj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Iav-Gj-CxU" secondAttribute="leading" id="gTc-4X-UKK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iav-Gj-CxU" secondAttribute="trailing" id="gVo-La-2oZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2S3-qk-V5G" secondAttribute="leading" id="kW6-T5-XCJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="trailing" id="sVj-5p-JZ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2S3-qk-V5G" secondAttribute="bottom" constant="20" id="squ-EC-mlE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="amountInputField" destination="VbQ-Xy-OYZ" id="OOY-2V-TI4"/>
                         <outlet property="amountOutputField" destination="2S3-qk-V5G" id="2go-an-P5N"/>
+                        <outlet property="audLbl" destination="Iav-Gj-CxU" id="DNo-VT-RBW"/>
                         <outlet property="currencyPickerView" destination="pMY-em-54b" id="NEs-op-vOy"/>
                     </connections>
                 </viewController>

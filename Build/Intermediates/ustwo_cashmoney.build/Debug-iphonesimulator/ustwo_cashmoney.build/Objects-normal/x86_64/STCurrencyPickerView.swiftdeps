@@ -1,37 +1,42 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "STCurrencyPickerViewDelegate"
 - "STCurrencyPickerView"
 provides-nominal:
+- "P15ustwo_cashmoney28STCurrencyPickerViewDelegate"
 - "C15ustwo_cashmoney20STCurrencyPickerView"
 provides-member:
+- ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", ""]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", ""]
 provides-dynamic-lookup:
 - "CURRENCY_WIDTH"
+- "updateLabelColorsWithPage"
 - "initialise"
-- "scrollViewDidEndDecelerating"
 - "currencies"
+- "scrollViewDidEndDecelerating"
 depends-top-level:
-- !private "<"
+- "String"
+- !private "++"
 - "UIScrollViewDelegate"
+- "STCurrencyPickerViewDelegate"
+- !private "/"
+- "NSCoder"
+- !private "NSTextAlignment"
+- !private "UIFont"
+- !private "BooleanLiteralType"
+- !private "<"
 - "Int"
+- !private "CGFloat"
 - "CGRect"
 - !private "UILabel"
-- !private "UIFont"
 - !private "*"
-- !private "NSTextAlignment"
-- !private "/"
-- "Array"
-- !private "++"
-- "UIScrollView"
-- !private "UIColor"
-- !private "CGRectMake"
-- "StringLiteralType"
-- "NSCoder"
-- "STCurrencyPickerView"
-- !private "BooleanLiteralType"
-- !private "print"
 - !private "+"
-- !private "CGFloat"
+- "STCurrencyPickerView"
+- "UIScrollView"
+- "StringLiteralType"
+- !private "CGRectMake"
+- !private "UIColor"
+- "Array"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - !private ["PSs9AnyObject", "CGFloat"]
@@ -47,13 +52,14 @@ depends-member:
 - !private ["PSs9AnyObject", "contentOffset"]
 - !private ["PSs9AnyObject", "contentSize"]
 - ["PSs9AnyObject", "currencies"]
+- ["PSs9AnyObject", "currencyDelegate"]
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "font"]
 - !private ["PSs9AnyObject", "frame"]
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "initialise"]
+- !private ["PSs9AnyObject", "isMemberOfClass"]
 - !private ["PSs9AnyObject", "pagingEnabled"]
-- !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
 - ["PSs9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -68,10 +74,12 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - !private ["PSs9AnyObject", "setNeedsDisplay"]
 - !private ["PSs9AnyObject", "showsHorizontalScrollIndicator"]
+- !private ["PSs9AnyObject", "subviews"]
 - !private ["PSs9AnyObject", "systemFontOfSize"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "textAlignment"]
 - !private ["PSs9AnyObject", "textColor"]
+- ["PSs9AnyObject", "updateLabelColorsWithPage"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - !private ["PSs9AnyObject", "whiteColor"]
 - ["PSs9AnyObject", ""]
@@ -79,6 +87,7 @@ depends-member:
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
@@ -86,6 +95,7 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
@@ -97,7 +107,6 @@ depends-member:
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["PSs21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
@@ -121,13 +130,14 @@ depends-member:
 - !private ["PSs11CVarArgType", "contentOffset"]
 - !private ["PSs11CVarArgType", "contentSize"]
 - ["PSs11CVarArgType", "currencies"]
+- ["PSs11CVarArgType", "currencyDelegate"]
 - !private ["PSs11CVarArgType", "delegate"]
 - !private ["PSs11CVarArgType", "font"]
 - !private ["PSs11CVarArgType", "frame"]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "initialise"]
+- !private ["PSs11CVarArgType", "isMemberOfClass"]
 - !private ["PSs11CVarArgType", "pagingEnabled"]
-- !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
 - ["PSs11CVarArgType", "scrollViewDidEndScrollingAnimation"]
@@ -142,14 +152,15 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - !private ["PSs11CVarArgType", "setNeedsDisplay"]
 - !private ["PSs11CVarArgType", "showsHorizontalScrollIndicator"]
+- !private ["PSs11CVarArgType", "subviews"]
 - !private ["PSs11CVarArgType", "systemFontOfSize"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "textAlignment"]
 - !private ["PSs11CVarArgType", "textColor"]
+- ["PSs11CVarArgType", "updateLabelColorsWithPage"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - !private ["PSs11CVarArgType", "whiteColor"]
 - ["PSs11CVarArgType", ""]
-- !private ["VSs9Character", "deinit"]
 - ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
@@ -164,8 +175,8 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
-- !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "CGFloat"]
 - !private ["PSs23CustomStringConvertible", "CGRectMake"]
@@ -181,6 +192,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UILabel"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
 - !private ["PSs23CustomStringConvertible", "clipsToBounds"]
@@ -188,13 +200,14 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "contentSize"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - ["PSs23CustomStringConvertible", "currencies"]
+- ["PSs23CustomStringConvertible", "currencyDelegate"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - !private ["PSs23CustomStringConvertible", "font"]
 - !private ["PSs23CustomStringConvertible", "frame"]
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "initialise"]
+- !private ["PSs23CustomStringConvertible", "isMemberOfClass"]
 - !private ["PSs23CustomStringConvertible", "pagingEnabled"]
-- !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -210,14 +223,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "setNeedsDisplay"]
 - !private ["PSs23CustomStringConvertible", "showsHorizontalScrollIndicator"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "subviews"]
 - !private ["PSs23CustomStringConvertible", "systemFontOfSize"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "textAlignment"]
 - !private ["PSs23CustomStringConvertible", "textColor"]
+- ["PSs23CustomStringConvertible", "updateLabelColorsWithPage"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["PSs23CustomStringConvertible", "whiteColor"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "CGFloat"]
 - !private ["PSs9Equatable", "CGRectMake"]
 - ["PSs9Equatable", "CURRENCY_WIDTH"]
@@ -235,14 +249,15 @@ depends-member:
 - !private ["PSs9Equatable", "contentOffset"]
 - !private ["PSs9Equatable", "contentSize"]
 - ["PSs9Equatable", "currencies"]
+- ["PSs9Equatable", "currencyDelegate"]
 - !private ["PSs9Equatable", "delegate"]
 - !private ["PSs9Equatable", "font"]
 - !private ["PSs9Equatable", "frame"]
 - !private ["PSs9Equatable", "height"]
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "initialise"]
+- !private ["PSs9Equatable", "isMemberOfClass"]
 - !private ["PSs9Equatable", "pagingEnabled"]
-- !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
 - ["PSs9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -258,17 +273,17 @@ depends-member:
 - !private ["PSs9Equatable", "setNeedsDisplay"]
 - !private ["PSs9Equatable", "showsHorizontalScrollIndicator"]
 - !private ["PSs9Equatable", "size"]
+- !private ["PSs9Equatable", "subviews"]
 - !private ["PSs9Equatable", "systemFontOfSize"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "textAlignment"]
 - !private ["PSs9Equatable", "textColor"]
+- ["PSs9Equatable", "updateLabelColorsWithPage"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - !private ["PSs9Equatable", "whiteColor"]
 - !private ["PSs9Equatable", "width"]
 - !private ["PSs9Equatable", "x"]
 - ["PSs9Equatable", ""]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Sf", "deinit"]
 - !private ["PSs23FloatLiteralConvertible", "init"]
 - !private ["PSs17FloatingPointType", "init"]
 - !private ["PSs16ForwardIndexType", "Distance"]
@@ -292,13 +307,14 @@ depends-member:
 - !private ["PSs8Hashable", "contentOffset"]
 - !private ["PSs8Hashable", "contentSize"]
 - ["PSs8Hashable", "currencies"]
+- ["PSs8Hashable", "currencyDelegate"]
 - !private ["PSs8Hashable", "delegate"]
 - !private ["PSs8Hashable", "font"]
 - !private ["PSs8Hashable", "frame"]
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "initialise"]
+- !private ["PSs8Hashable", "isMemberOfClass"]
 - !private ["PSs8Hashable", "pagingEnabled"]
-- !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
 - ["PSs8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -313,10 +329,12 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - !private ["PSs8Hashable", "setNeedsDisplay"]
 - !private ["PSs8Hashable", "showsHorizontalScrollIndicator"]
+- !private ["PSs8Hashable", "subviews"]
 - !private ["PSs8Hashable", "systemFontOfSize"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "textAlignment"]
 - !private ["PSs8Hashable", "textColor"]
+- ["PSs8Hashable", "updateLabelColorsWithPage"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - !private ["PSs8Hashable", "whiteColor"]
 - ["PSs8Hashable", ""]
@@ -330,12 +348,7 @@ depends-member:
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "deinit"]
 - !private ["Si", "init"]
-- !private ["VSs5Int16", "deinit"]
-- !private ["VSs5Int32", "deinit"]
-- !private ["VSs5Int64", "deinit"]
-- !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["PSs21IntegerArithmeticType", "init"]
@@ -352,18 +365,21 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "count"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "count"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CGFloat"]
@@ -379,13 +395,14 @@ depends-member:
 - !private ["PSo8NSCoding", "contentOffset"]
 - !private ["PSo8NSCoding", "contentSize"]
 - ["PSo8NSCoding", "currencies"]
+- ["PSo8NSCoding", "currencyDelegate"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "initialise"]
+- !private ["PSo8NSCoding", "isMemberOfClass"]
 - !private ["PSo8NSCoding", "pagingEnabled"]
-- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -400,16 +417,17 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - !private ["PSo8NSCoding", "setNeedsDisplay"]
 - !private ["PSo8NSCoding", "showsHorizontalScrollIndicator"]
+- !private ["PSo8NSCoding", "subviews"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
 - !private ["PSo8NSCoding", "textColor"]
+- ["PSo8NSCoding", "updateLabelColorsWithPage"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["PSo9NSCopying", "whiteColor"]
-- !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGRectMake"]
@@ -417,6 +435,7 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSCoder"]
 - !private ["CSo8NSObject", "NSTextAlignment"]
+- ["CSo8NSObject", "STCurrencyPickerViewDelegate"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UILabel"]
@@ -426,13 +445,14 @@ depends-member:
 - !private ["CSo8NSObject", "contentOffset"]
 - !private ["CSo8NSObject", "contentSize"]
 - ["CSo8NSObject", "currencies"]
+- ["CSo8NSObject", "currencyDelegate"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "initialise"]
+- !private ["CSo8NSObject", "isMemberOfClass"]
 - !private ["CSo8NSObject", "pagingEnabled"]
-- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -447,10 +467,12 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - !private ["CSo8NSObject", "setNeedsDisplay"]
 - !private ["CSo8NSObject", "showsHorizontalScrollIndicator"]
+- !private ["CSo8NSObject", "subviews"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
 - !private ["CSo8NSObject", "textColor"]
+- ["CSo8NSObject", "updateLabelColorsWithPage"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
@@ -466,13 +488,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "contentOffset"]
 - !private ["PSo16NSObjectProtocol", "contentSize"]
 - ["PSo16NSObjectProtocol", "currencies"]
+- ["PSo16NSObjectProtocol", "currencyDelegate"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "initialise"]
+- !private ["PSo16NSObjectProtocol", "isMemberOfClass"]
 - !private ["PSo16NSObjectProtocol", "pagingEnabled"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -487,19 +510,19 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - !private ["PSo16NSObjectProtocol", "setNeedsDisplay"]
 - !private ["PSo16NSObjectProtocol", "showsHorizontalScrollIndicator"]
+- !private ["PSo16NSObjectProtocol", "subviews"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
+- ["PSo16NSObjectProtocol", "updateLabelColorsWithPage"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
-- !private ["CSo8NSString", "deinit"]
-- !private ["CSo8NSString", "init"]
 - !private ["OSC15NSTextAlignment", "Center"]
-- !private ["PSs16OutputStreamType", "init"]
+- !private ["Sq", "deinit"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs21RandomAccessIndexType", "init"]
@@ -507,6 +530,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Center"]
@@ -517,6 +541,7 @@ depends-member:
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "Int"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "NSCoder"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "NSTextAlignment"]
+- ["C15ustwo_cashmoney20STCurrencyPickerView", "STCurrencyPickerViewDelegate"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "UIColor"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "UIFont"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "UILabel"]
@@ -525,13 +550,13 @@ depends-member:
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "clipsToBounds"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "contentSize"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "currencies"]
+- ["C15ustwo_cashmoney20STCurrencyPickerView", "currencyDelegate"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "deinit"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "delegate"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "frame"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "init"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "initialise"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "pagingEnabled"]
-- !private ["C15ustwo_cashmoney20STCurrencyPickerView", "print"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "scrollViewDidEndDecelerating"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "scrollViewDidEndDragging"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "scrollViewDidEndScrollingAnimation"]
@@ -546,7 +571,11 @@ depends-member:
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "scrollViewWillEndDragging"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "setNeedsDisplay"]
 - !private ["C15ustwo_cashmoney20STCurrencyPickerView", "showsHorizontalScrollIndicator"]
+- !private ["C15ustwo_cashmoney20STCurrencyPickerView", "subviews"]
+- ["C15ustwo_cashmoney20STCurrencyPickerView", "updateLabelColorsWithPage"]
 - ["C15ustwo_cashmoney20STCurrencyPickerView", "viewForZoomingInScrollView"]
+- ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "String"]
+- ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "updatedCurrency"]
 - ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -564,13 +593,9 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
-- !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["PSs10Strideable", "init"]
-- !private ["SS", "init"]
-- !private ["PSs30StringInterpolationConvertible", "init"]
-- !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "CGFloat"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRectMake"]
 - ["PSo29UIAccessibilityIdentification", "CURRENCY_WIDTH"]
@@ -584,13 +609,14 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "contentOffset"]
 - !private ["PSo29UIAccessibilityIdentification", "contentSize"]
 - ["PSo29UIAccessibilityIdentification", "currencies"]
+- ["PSo29UIAccessibilityIdentification", "currencyDelegate"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "initialise"]
+- !private ["PSo29UIAccessibilityIdentification", "isMemberOfClass"]
 - !private ["PSo29UIAccessibilityIdentification", "pagingEnabled"]
-- !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "scrollViewDidEndDecelerating"]
 - ["PSo29UIAccessibilityIdentification", "scrollViewDidEndDragging"]
 - ["PSo29UIAccessibilityIdentification", "scrollViewDidEndScrollingAnimation"]
@@ -605,9 +631,11 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "scrollViewWillEndDragging"]
 - !private ["PSo29UIAccessibilityIdentification", "setNeedsDisplay"]
 - !private ["PSo29UIAccessibilityIdentification", "showsHorizontalScrollIndicator"]
+- !private ["PSo29UIAccessibilityIdentification", "subviews"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- ["PSo29UIAccessibilityIdentification", "updateLabelColorsWithPage"]
 - ["PSo29UIAccessibilityIdentification", "viewForZoomingInScrollView"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGFloat"]
@@ -623,13 +651,14 @@ depends-member:
 - !private ["PSo12UIAppearance", "contentOffset"]
 - !private ["PSo12UIAppearance", "contentSize"]
 - ["PSo12UIAppearance", "currencies"]
+- ["PSo12UIAppearance", "currencyDelegate"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "initialise"]
+- !private ["PSo12UIAppearance", "isMemberOfClass"]
 - !private ["PSo12UIAppearance", "pagingEnabled"]
-- !private ["PSo12UIAppearance", "print"]
 - ["PSo12UIAppearance", "scrollViewDidEndDecelerating"]
 - ["PSo12UIAppearance", "scrollViewDidEndDragging"]
 - ["PSo12UIAppearance", "scrollViewDidEndScrollingAnimation"]
@@ -644,9 +673,11 @@ depends-member:
 - ["PSo12UIAppearance", "scrollViewWillEndDragging"]
 - !private ["PSo12UIAppearance", "setNeedsDisplay"]
 - !private ["PSo12UIAppearance", "showsHorizontalScrollIndicator"]
+- !private ["PSo12UIAppearance", "subviews"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "textColor"]
+- ["PSo12UIAppearance", "updateLabelColorsWithPage"]
 - ["PSo12UIAppearance", "viewForZoomingInScrollView"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
@@ -662,13 +693,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "contentOffset"]
 - !private ["PSo21UIAppearanceContainer", "contentSize"]
 - ["PSo21UIAppearanceContainer", "currencies"]
+- ["PSo21UIAppearanceContainer", "currencyDelegate"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "initialise"]
+- !private ["PSo21UIAppearanceContainer", "isMemberOfClass"]
 - !private ["PSo21UIAppearanceContainer", "pagingEnabled"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -683,11 +715,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - !private ["PSo21UIAppearanceContainer", "setNeedsDisplay"]
 - !private ["PSo21UIAppearanceContainer", "showsHorizontalScrollIndicator"]
+- !private ["PSo21UIAppearanceContainer", "subviews"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
+- ["PSo21UIAppearanceContainer", "updateLabelColorsWithPage"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo17UICoordinateSpace", "CGFloat"]
 - !private ["PSo17UICoordinateSpace", "CGRectMake"]
@@ -702,13 +737,14 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "contentOffset"]
 - !private ["PSo17UICoordinateSpace", "contentSize"]
 - ["PSo17UICoordinateSpace", "currencies"]
+- ["PSo17UICoordinateSpace", "currencyDelegate"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "initialise"]
+- !private ["PSo17UICoordinateSpace", "isMemberOfClass"]
 - !private ["PSo17UICoordinateSpace", "pagingEnabled"]
-- !private ["PSo17UICoordinateSpace", "print"]
 - ["PSo17UICoordinateSpace", "scrollViewDidEndDecelerating"]
 - ["PSo17UICoordinateSpace", "scrollViewDidEndDragging"]
 - ["PSo17UICoordinateSpace", "scrollViewDidEndScrollingAnimation"]
@@ -723,9 +759,11 @@ depends-member:
 - ["PSo17UICoordinateSpace", "scrollViewWillEndDragging"]
 - !private ["PSo17UICoordinateSpace", "setNeedsDisplay"]
 - !private ["PSo17UICoordinateSpace", "showsHorizontalScrollIndicator"]
+- !private ["PSo17UICoordinateSpace", "subviews"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
+- ["PSo17UICoordinateSpace", "updateLabelColorsWithPage"]
 - ["PSo17UICoordinateSpace", "viewForZoomingInScrollView"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGFloat"]
@@ -741,13 +779,14 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "contentOffset"]
 - !private ["PSo13UIDynamicItem", "contentSize"]
 - ["PSo13UIDynamicItem", "currencies"]
+- ["PSo13UIDynamicItem", "currencyDelegate"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "initialise"]
+- !private ["PSo13UIDynamicItem", "isMemberOfClass"]
 - !private ["PSo13UIDynamicItem", "pagingEnabled"]
-- !private ["PSo13UIDynamicItem", "print"]
 - ["PSo13UIDynamicItem", "scrollViewDidEndDecelerating"]
 - ["PSo13UIDynamicItem", "scrollViewDidEndDragging"]
 - ["PSo13UIDynamicItem", "scrollViewDidEndScrollingAnimation"]
@@ -762,11 +801,55 @@ depends-member:
 - ["PSo13UIDynamicItem", "scrollViewWillEndDragging"]
 - !private ["PSo13UIDynamicItem", "setNeedsDisplay"]
 - !private ["PSo13UIDynamicItem", "showsHorizontalScrollIndicator"]
+- !private ["PSo13UIDynamicItem", "subviews"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
+- ["PSo13UIDynamicItem", "updateLabelColorsWithPage"]
 - ["PSo13UIDynamicItem", "viewForZoomingInScrollView"]
 - ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
+- !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- ["PSo18UIFocusEnvironment", "CURRENCY_WIDTH"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
+- !private ["PSo18UIFocusEnvironment", "NSTextAlignment"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
+- !private ["PSo18UIFocusEnvironment", "UILabel"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
+- !private ["PSo18UIFocusEnvironment", "contentOffset"]
+- !private ["PSo18UIFocusEnvironment", "contentSize"]
+- ["PSo18UIFocusEnvironment", "currencies"]
+- ["PSo18UIFocusEnvironment", "currencyDelegate"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "font"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "initialise"]
+- !private ["PSo18UIFocusEnvironment", "isMemberOfClass"]
+- !private ["PSo18UIFocusEnvironment", "pagingEnabled"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndZooming"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidScroll"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidScrollToTop"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidZoom"]
+- ["PSo18UIFocusEnvironment", "scrollViewShouldScrollToTop"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginDecelerating"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginDragging"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
+- !private ["PSo18UIFocusEnvironment", "setNeedsDisplay"]
+- !private ["PSo18UIFocusEnvironment", "showsHorizontalScrollIndicator"]
+- !private ["PSo18UIFocusEnvironment", "subviews"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textAlignment"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
+- ["PSo18UIFocusEnvironment", "updateLabelColorsWithPage"]
+- ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "init"]
@@ -780,6 +863,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSCoder"]
 - !private ["CSo11UIResponder", "NSTextAlignment"]
+- ["CSo11UIResponder", "STCurrencyPickerViewDelegate"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UILabel"]
@@ -789,13 +873,14 @@ depends-member:
 - !private ["CSo11UIResponder", "contentOffset"]
 - !private ["CSo11UIResponder", "contentSize"]
 - ["CSo11UIResponder", "currencies"]
+- ["CSo11UIResponder", "currencyDelegate"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "initialise"]
+- !private ["CSo11UIResponder", "isMemberOfClass"]
 - !private ["CSo11UIResponder", "pagingEnabled"]
-- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -810,9 +895,11 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - !private ["CSo11UIResponder", "setNeedsDisplay"]
 - !private ["CSo11UIResponder", "showsHorizontalScrollIndicator"]
+- !private ["CSo11UIResponder", "subviews"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
 - !private ["CSo11UIResponder", "textColor"]
+- ["CSo11UIResponder", "updateLabelColorsWithPage"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "CGFloat"]
 - ["CSo12UIScrollView", "CGRect"]
@@ -821,6 +908,7 @@ depends-member:
 - ["CSo12UIScrollView", "Int"]
 - ["CSo12UIScrollView", "NSCoder"]
 - !private ["CSo12UIScrollView", "NSTextAlignment"]
+- ["CSo12UIScrollView", "STCurrencyPickerViewDelegate"]
 - !private ["CSo12UIScrollView", "UIColor"]
 - !private ["CSo12UIScrollView", "UIFont"]
 - !private ["CSo12UIScrollView", "UILabel"]
@@ -830,12 +918,12 @@ depends-member:
 - !private ["CSo12UIScrollView", "contentOffset"]
 - !private ["CSo12UIScrollView", "contentSize"]
 - ["CSo12UIScrollView", "currencies"]
+- ["CSo12UIScrollView", "currencyDelegate"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "frame"]
 - ["CSo12UIScrollView", "init"]
 - ["CSo12UIScrollView", "initialise"]
 - !private ["CSo12UIScrollView", "pagingEnabled"]
-- !private ["CSo12UIScrollView", "print"]
 - ["CSo12UIScrollView", "scrollViewDidEndDecelerating"]
 - ["CSo12UIScrollView", "scrollViewDidEndDragging"]
 - ["CSo12UIScrollView", "scrollViewDidEndScrollingAnimation"]
@@ -850,6 +938,8 @@ depends-member:
 - ["CSo12UIScrollView", "scrollViewWillEndDragging"]
 - !private ["CSo12UIScrollView", "setNeedsDisplay"]
 - !private ["CSo12UIScrollView", "showsHorizontalScrollIndicator"]
+- !private ["CSo12UIScrollView", "subviews"]
+- ["CSo12UIScrollView", "updateLabelColorsWithPage"]
 - ["CSo12UIScrollView", "viewForZoomingInScrollView"]
 - ["CSo12UIScrollView", ""]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
@@ -864,11 +954,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "clipsToBounds"]
 - !private ["PSo20UIScrollViewDelegate", "contentSize"]
 - !private ["PSo20UIScrollViewDelegate", "currencies"]
+- !private ["PSo20UIScrollViewDelegate", "currencyDelegate"]
 - !private ["PSo20UIScrollViewDelegate", "delegate"]
 - !private ["PSo20UIScrollViewDelegate", "frame"]
 - !private ["PSo20UIScrollViewDelegate", "initialise"]
 - !private ["PSo20UIScrollViewDelegate", "pagingEnabled"]
-- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -883,6 +973,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo20UIScrollViewDelegate", "setNeedsDisplay"]
 - !private ["PSo20UIScrollViewDelegate", "showsHorizontalScrollIndicator"]
+- !private ["PSo20UIScrollViewDelegate", "subviews"]
+- !private ["PSo20UIScrollViewDelegate", "updateLabelColorsWithPage"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
@@ -898,13 +990,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "contentOffset"]
 - !private ["PSo18UITraitEnvironment", "contentSize"]
 - ["PSo18UITraitEnvironment", "currencies"]
+- ["PSo18UITraitEnvironment", "currencyDelegate"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "initialise"]
+- !private ["PSo18UITraitEnvironment", "isMemberOfClass"]
 - !private ["PSo18UITraitEnvironment", "pagingEnabled"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -919,9 +1012,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UITraitEnvironment", "setNeedsDisplay"]
 - !private ["PSo18UITraitEnvironment", "showsHorizontalScrollIndicator"]
+- !private ["PSo18UITraitEnvironment", "subviews"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
+- ["PSo18UITraitEnvironment", "updateLabelColorsWithPage"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "CGFloat"]
@@ -931,6 +1026,7 @@ depends-member:
 - ["CSo6UIView", "Int"]
 - ["CSo6UIView", "NSCoder"]
 - !private ["CSo6UIView", "NSTextAlignment"]
+- ["CSo6UIView", "STCurrencyPickerViewDelegate"]
 - !private ["CSo6UIView", "UIColor"]
 - !private ["CSo6UIView", "UIFont"]
 - !private ["CSo6UIView", "UILabel"]
@@ -940,13 +1036,15 @@ depends-member:
 - !private ["CSo6UIView", "contentOffset"]
 - !private ["CSo6UIView", "contentSize"]
 - ["CSo6UIView", "currencies"]
+- ["CSo6UIView", "currencyDelegate"]
+- !private ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "initialise"]
+- !private ["CSo6UIView", "isMemberOfClass"]
 - !private ["CSo6UIView", "pagingEnabled"]
-- !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "scrollViewDidEndDecelerating"]
 - ["CSo6UIView", "scrollViewDidEndDragging"]
 - ["CSo6UIView", "scrollViewDidEndScrollingAnimation"]
@@ -961,38 +1059,32 @@ depends-member:
 - ["CSo6UIView", "scrollViewWillEndDragging"]
 - !private ["CSo6UIView", "setNeedsDisplay"]
 - !private ["CSo6UIView", "showsHorizontalScrollIndicator"]
+- !private ["CSo6UIView", "subviews"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "textColor"]
+- ["CSo6UIView", "updateLabelColorsWithPage"]
 - ["CSo6UIView", "viewForZoomingInScrollView"]
-- !private ["Su", "deinit"]
-- !private ["VSs6UInt16", "deinit"]
-- !private ["VSs6UInt32", "deinit"]
-- !private ["VSs6UInt64", "deinit"]
-- !private ["VSs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["PSs10_ArrayType", "Element"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "count"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
-- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
-- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs19_CVarArgAlignedType", "init"]
 - !private ["PSs22_CVarArgPassedAsDouble", "init"]
-- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
 - ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
@@ -1010,6 +1102,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
@@ -1031,6 +1124,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "UIColor"]
 - !private ["PSs12_Reflectable", "UIFont"]
 - !private ["PSs12_Reflectable", "UILabel"]
+- !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "clipsToBounds"]
@@ -1038,14 +1132,15 @@ depends-member:
 - !private ["PSs12_Reflectable", "contentSize"]
 - !private ["PSs12_Reflectable", "count"]
 - ["PSs12_Reflectable", "currencies"]
+- ["PSs12_Reflectable", "currencyDelegate"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "font"]
 - !private ["PSs12_Reflectable", "frame"]
 - !private ["PSs12_Reflectable", "height"]
 - ["PSs12_Reflectable", "init"]
 - ["PSs12_Reflectable", "initialise"]
+- !private ["PSs12_Reflectable", "isMemberOfClass"]
 - !private ["PSs12_Reflectable", "pagingEnabled"]
-- !private ["PSs12_Reflectable", "print"]
 - ["PSs12_Reflectable", "scrollViewDidEndDecelerating"]
 - ["PSs12_Reflectable", "scrollViewDidEndDragging"]
 - ["PSs12_Reflectable", "scrollViewDidEndScrollingAnimation"]
@@ -1062,9 +1157,11 @@ depends-member:
 - !private ["PSs12_Reflectable", "showsHorizontalScrollIndicator"]
 - !private ["PSs12_Reflectable", "size"]
 - !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "subviews"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textAlignment"]
 - !private ["PSs12_Reflectable", "textColor"]
+- ["PSs12_Reflectable", "updateLabelColorsWithPage"]
 - ["PSs12_Reflectable", "viewForZoomingInScrollView"]
 - !private ["PSs12_Reflectable", "width"]
 - !private ["PSs12_Reflectable", "x"]
@@ -1091,15 +1188,11 @@ depends-nominal:
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "PSs11CVarArgType"
-- !private "VSs9Character"
 - "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
-- !private "Sd"
 - "PSs9Equatable"
-- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
 - !private "PSs23FloatLiteralConvertible"
 - !private "PSs17FloatingPointType"
 - !private "PSs16ForwardIndexType"
@@ -1108,10 +1201,6 @@ depends-nominal:
 - "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
-- !private "VSs5Int16"
-- !private "VSs5Int32"
-- !private "VSs5Int64"
-- !private "VSs4Int8"
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
@@ -1121,32 +1210,28 @@ depends-nominal:
 - "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
-- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - !private "OSC15NSTextAlignment"
-- !private "PSs16OutputStreamType"
+- !private "Sq"
 - !private "PSs21RandomAccessIndexType"
 - "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
 - "C15ustwo_cashmoney20STCurrencyPickerView"
+- "P15ustwo_cashmoney28STCurrencyPickerViewDelegate"
 - "PSs12SequenceType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
 - !private "VSs5Slice"
-- !private "PSs10Streamable"
 - !private "PSs10Strideable"
-- !private "SS"
-- !private "PSs30StringInterpolationConvertible"
-- !private "PSs24StringLiteralConvertible"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo7UIColor"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - !private "CSo6UIFont"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
@@ -1154,23 +1239,12 @@ depends-nominal:
 - "PSo20UIScrollViewDelegate"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "Su"
-- !private "VSs6UInt16"
-- !private "VSs6UInt32"
-- !private "VSs6UInt64"
-- !private "VSs5UInt8"
-- !private "Sc"
-- !private "PSs31UnicodeScalarLiteralConvertible"
 - "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "PSs32_BuiltinStringLiteralConvertible"
-- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
-- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs19_CVarArgAlignedType"
 - !private "PSs22_CVarArgPassedAsDouble"
-- !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - "PSs24_DestructorSafeContainer"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
@@ -1190,4 +1264,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "d2703a9e2b6cd243a53fe530e7a4aa09"
+interface-hash: "150ece019bf688807f89c1f19303e083"

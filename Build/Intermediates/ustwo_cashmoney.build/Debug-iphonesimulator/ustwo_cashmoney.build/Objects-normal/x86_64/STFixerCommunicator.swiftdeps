@@ -7,16 +7,16 @@ provides-member:
 - ["C15ustwo_cashmoney19STFixerCommunicator", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "ExchangeRates"
 - !private "NSURL"
 - "STFixerCommunicator"
+- !private "NSURLConnection"
+- !private "NSURLRequest"
+- !private "print"
+- !private "NSJSONSerialization"
+- !private "NSOperationQueue"
 - !private "StringLiteralType"
 - !private "NSJSONReadingOptions"
-- !private "NSURLRequest"
-- !private "NSOperationQueue"
-- !private "NSJSONSerialization"
-- !private "NSURLConnection"
-- !private "print"
-- "ExchangeRates"
 depends-member:
 - ["PSs9AnyObject", "ExchangeRates"]
 - !private ["PSs9AnyObject", "JSONObjectWithData"]
@@ -98,6 +98,7 @@ depends-member:
 - ["C15ustwo_cashmoney19STFixerCommunicator", "sharedCommunicator"]
 - !private ["PSs14SetAlgebraType", "MutableContainers"]
 - !private ["SS", "deinit"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs12_Reflectable", "init"]
 depends-nominal:
 - "PSs9AnyObject"
@@ -124,6 +125,7 @@ depends-nominal:
 - "C15ustwo_cashmoney19STFixerCommunicator"
 - !private "PSs14SetAlgebraType"
 - !private "SS"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 - !private "objectForKey"

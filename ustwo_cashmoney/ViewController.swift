@@ -13,12 +13,17 @@ class ViewController: UIViewController, UITextFieldDelegate, STCurrencyPickerVie
     @IBOutlet var amountInputField: UITextField!
     @IBOutlet var amountOutputField: UILabel!
     @IBOutlet var currencyPickerView: STCurrencyPickerView!
+    @IBOutlet var audLbl: UILabel!
     
     var selectedCurrency = "USD"            // Default to USD
     var inputAmount:Float = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        audLbl.adjustsFontSizeToFitWidth = true;
+        amountInputField.adjustsFontSizeToFitWidth = true;
+        amountOutputField.adjustsFontSizeToFitWidth = true;
         
         currencyPickerView.currencyDelegate = self;
         amountInputField.delegate = self;

@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C15ustwo_cashmoney11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationDidEnterBackground"
+- "application"
+- "applicationWillTerminate"
 - "applicationWillResignActive"
 - "window"
-- "applicationWillTerminate"
-- "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
-- "application"
-- "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "NSObject"
-- "AnyObject"
-- "UIApplicationDelegate"
-- "Bool"
-- !private "STFixerCommunicator"
-- "UIWindow"
-- "UIResponder"
 - "UIApplication"
+- "Bool"
+- "UIResponder"
 - !private "BooleanLiteralType"
+- !private "STFixerCommunicator"
+- "UIApplicationDelegate"
+- "AnyObject"
+- "UIWindow"
+- "NSObject"
 - "AppDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "STFixerCommunicator"]
