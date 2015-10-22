@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,24 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yUm-hq-Qg1" userLabel="cashMoneyLogo">
-                                <rect key="frame" x="40" y="40" width="520" height="20"/>
+                                <rect key="frame" x="40" y="35" width="520" height="20"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="43x-V6-Rxi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-Gj-CxU" userLabel="fromCurrencyLbl">
-                                <rect key="frame" x="20" y="80" width="560" height="67"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="750" constant="50" id="xJ3-fK-o9Z"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="56"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="2S3-qk-V5G" userLabel="outputLbl">
-                                <rect key="frame" x="20" y="513" width="560" height="67"/>
+                                <rect key="frame" x="20" y="473" width="560" height="67"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="3qI-ih-oUo"/>
@@ -45,14 +36,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashed-line" translatesAutoresizingMaskIntoConstraints="NO" id="B75-Qd-n9B">
-                                <rect key="frame" x="40" y="241" width="520" height="3"/>
+                                <rect key="frame" x="40" y="237" width="520" height="3"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="Tnk-7z-fAV"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osr-de-lSK" userLabel="Currency Background">
-                                <rect key="frame" x="0.0" y="378" width="600" height="125"/>
+                                <rect key="frame" x="0.0" y="304" width="600" height="125"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMY-em-54b" customClass="STCurrencyPickerView" customModule="ustwo_cashmoney" customModuleProvider="target">
                                         <rect key="frame" x="225" y="0.0" width="150" height="125"/>
@@ -89,10 +80,10 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-Xy-OYZ" userLabel="inputTextField">
-                                <rect key="frame" x="20" y="167" width="560" height="67"/>
+                                <rect key="frame" x="20" y="158" width="560" height="67"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="67" id="FBz-dL-huE"/>
+                                    <constraint firstAttribute="height" constant="67" id="FBz-dL-huE"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
@@ -101,11 +92,20 @@
                                     <action selector="textFieldEditingDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="mvf-m1-MJH"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-Gj-CxU" userLabel="fromCurrencyLbl">
+                                <rect key="frame" x="20" y="85" width="560" height="65"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="xJ3-fK-o9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.22745098039215686" green="0.80784313725490198" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Iav-Gj-CxU" firstAttribute="top" secondItem="yUm-hq-Qg1" secondAttribute="bottom" constant="20" id="0Ny-g9-omK"/>
                             <constraint firstItem="Osr-de-lSK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1IH-Cg-buu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="B75-Qd-n9B" secondAttribute="trailing" constant="20" id="6FT-5L-zsq"/>
                             <constraint firstItem="yUm-hq-Qg1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6I4-PN-cUZ"/>
@@ -113,18 +113,24 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Osr-de-lSK" secondAttribute="trailing" constant="-20" id="AqP-ON-BUm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yUm-hq-Qg1" secondAttribute="trailing" constant="20" id="FXf-gU-ZIP"/>
                             <constraint firstItem="B75-Qd-n9B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Hau-AB-Z6i"/>
-                            <constraint firstItem="B75-Qd-n9B" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" constant="7" id="N1F-En-h0A"/>
-                            <constraint firstItem="Osr-de-lSK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B75-Qd-n9B" secondAttribute="bottom" constant="40" id="OxR-gM-Gqf"/>
-                            <constraint firstItem="VbQ-Xy-OYZ" firstAttribute="top" secondItem="Iav-Gj-CxU" secondAttribute="bottom" constant="20" id="Tz2-Z6-iPq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="bottom" multiplier="7:5" id="bvO-Y9-bTh"/>
                             <constraint firstItem="yUm-hq-Qg1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cNe-Ev-77K"/>
                             <constraint firstAttribute="leadingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="leading" id="dbR-tI-RsW"/>
-                            <constraint firstItem="2S3-qk-V5G" firstAttribute="top" secondItem="Osr-de-lSK" secondAttribute="bottom" constant="10" id="fRw-pD-CFj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VbQ-Xy-OYZ" secondAttribute="bottom" multiplier="8:3" id="f5p-hG-zpR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Iav-Gj-CxU" secondAttribute="leading" id="gTc-4X-UKK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Iav-Gj-CxU" secondAttribute="trailing" id="gVo-La-2oZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yUm-hq-Qg1" secondAttribute="bottom" multiplier="11:1" id="jP5-aI-hi4"/>
                             <constraint firstAttribute="leadingMargin" secondItem="2S3-qk-V5G" secondAttribute="leading" id="kW6-T5-XCJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VbQ-Xy-OYZ" secondAttribute="trailing" id="sVj-5p-JZ6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2S3-qk-V5G" secondAttribute="bottom" constant="20" id="squ-EC-mlE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2S3-qk-V5G" secondAttribute="bottom" multiplier="10:9" id="squ-EC-mlE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B75-Qd-n9B" secondAttribute="bottom" multiplier="10:4" id="uO0-y7-uU1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Iav-Gj-CxU" secondAttribute="bottom" multiplier="8:2" id="xMf-jL-utz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6I4-PN-cUZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="amountInputField" destination="VbQ-Xy-OYZ" id="OOY-2V-TI4"/>

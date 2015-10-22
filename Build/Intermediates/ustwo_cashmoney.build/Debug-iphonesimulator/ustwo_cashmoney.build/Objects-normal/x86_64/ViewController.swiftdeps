@@ -6,41 +6,41 @@ provides-nominal:
 provides-member:
 - ["C15ustwo_cashmoney14ViewController", ""]
 provides-dynamic-lookup:
-- "amountInputField"
-- "calculateOutputAmount"
-- "inputAmount"
-- "updatedCurrency"
-- "textFieldShouldReturn"
 - "currencyPickerView"
-- "updateConvertedValue"
-- "amountOutputField"
-- "selectedCurrency"
-- "textFieldDidBeginEditing"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
-- "calculateCurrencySymbol"
+- "updatedCurrency"
+- "textFieldDidBeginEditing"
+- "amountInputField"
+- "didReceiveMemoryWarning"
+- "calculateOutputAmount"
+- "updateConvertedValue"
 - "textFieldEditingDidChange"
+- "calculateCurrencySymbol"
 - "audLbl"
+- "textFieldShouldReturn"
+- "amountOutputField"
+- "inputAmount"
+- "selectedCurrency"
 depends-top-level:
-- "STCurrencyPickerViewDelegate"
-- "STCurrencyPickerView"
-- !private "UnicodeScalarType"
-- "Float"
-- !private "BooleanLiteralType"
+- !private "~="
 - "UIViewController"
-- !private "STFixerCommunicator"
+- !private "BooleanLiteralType"
 - "UITextFieldDelegate"
 - !private "*"
+- !private "STFixerCommunicator"
 - !private "round"
-- !private "=="
-- !private "~="
 - "String"
-- "UILabel"
 - "AnyObject"
-- "UITextField"
+- "STCurrencyPickerViewDelegate"
+- !private "UnicodeScalarType"
 - "Bool"
+- "STCurrencyPickerView"
 - "StringLiteralType"
+- "UITextField"
+- "UILabel"
 - "ViewController"
+- !private "=="
+- "Float"
 depends-member:
 - !private ["PSs9AnyObject", "CAD"]
 - !private ["PSs9AnyObject", "EUR"]
@@ -48,7 +48,6 @@ depends-member:
 - !private ["PSs9AnyObject", "JPY"]
 - !private ["PSs9AnyObject", "STFixerCommunicator"]
 - !private ["PSs9AnyObject", "USD"]
-- !private ["PSs9AnyObject", "adjustsFontSizeToFitWidth"]
 - ["PSs9AnyObject", "amountInputField"]
 - ["PSs9AnyObject", "amountOutputField"]
 - ["PSs9AnyObject", "audLbl"]
@@ -90,7 +89,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "JPY"]
 - !private ["PSs11CVarArgType", "STFixerCommunicator"]
 - !private ["PSs11CVarArgType", "USD"]
-- !private ["PSs11CVarArgType", "adjustsFontSizeToFitWidth"]
 - ["PSs11CVarArgType", "amountInputField"]
 - ["PSs11CVarArgType", "amountOutputField"]
 - ["PSs11CVarArgType", "audLbl"]
@@ -134,7 +132,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "STFixerCommunicator"]
 - !private ["PSs23CustomStringConvertible", "USD"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - ["PSs23CustomStringConvertible", "amountInputField"]
 - ["PSs23CustomStringConvertible", "amountOutputField"]
 - ["PSs23CustomStringConvertible", "audLbl"]
@@ -172,7 +169,6 @@ depends-member:
 - !private ["PSs9Equatable", "STFixerCommunicator"]
 - !private ["PSs9Equatable", "USD"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- !private ["PSs9Equatable", "adjustsFontSizeToFitWidth"]
 - ["PSs9Equatable", "amountInputField"]
 - ["PSs9Equatable", "amountOutputField"]
 - ["PSs9Equatable", "audLbl"]
@@ -218,7 +214,6 @@ depends-member:
 - !private ["PSs8Hashable", "STFixerCommunicator"]
 - !private ["PSs8Hashable", "USD"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- !private ["PSs8Hashable", "adjustsFontSizeToFitWidth"]
 - ["PSs8Hashable", "amountInputField"]
 - ["PSs8Hashable", "amountOutputField"]
 - ["PSs8Hashable", "audLbl"]
@@ -257,7 +252,6 @@ depends-member:
 - !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs14MirrorPathType", "stringByReplacingOccurrencesOfString"]
 - !private ["PSo8NSCoding", "STFixerCommunicator"]
-- !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - ["PSo8NSCoding", "amountInputField"]
 - ["PSo8NSCoding", "amountOutputField"]
 - ["PSo8NSCoding", "audLbl"]
@@ -330,7 +324,6 @@ depends-member:
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "USD"]
-- !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - ["CSo8NSObject", "amountInputField"]
 - ["CSo8NSObject", "amountOutputField"]
 - ["CSo8NSObject", "audLbl"]
@@ -366,7 +359,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "JPY"]
 - !private ["PSo16NSObjectProtocol", "STFixerCommunicator"]
 - !private ["PSo16NSObjectProtocol", "USD"]
-- !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - ["PSo16NSObjectProtocol", "amountInputField"]
 - ["PSo16NSObjectProtocol", "amountOutputField"]
 - ["PSo16NSObjectProtocol", "audLbl"]
@@ -412,7 +404,6 @@ depends-member:
 - !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "STFixerCommunicator"]
 - !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "amountInputField"]
 - !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "amountOutputField"]
-- !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "audLbl"]
 - !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "calculateCurrencySymbol"]
 - !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "calculateOutputAmount"]
 - !private ["P15ustwo_cashmoney28STCurrencyPickerViewDelegate", "currencyPickerView"]
@@ -444,18 +435,15 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "floatValue"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
-- !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "currencyDelegate"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
-- !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
 - !private ["PSo12UIAppearance", "currencyDelegate"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "STFixerCommunicator"]
-- !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - ["PSo21UIAppearanceContainer", "amountInputField"]
 - ["PSo21UIAppearanceContainer", "amountOutputField"]
 - ["PSo21UIAppearanceContainer", "audLbl"]
@@ -507,22 +495,18 @@ depends-member:
 - ["PSo18UIContentContainer", "updatedCurrency"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
-- !private ["CSo9UIControl", "adjustsFontSizeToFitWidth"]
 - !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "text"]
-- !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UICoordinateSpace", "currencyDelegate"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "text"]
-- !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
 - !private ["PSo13UIDynamicItem", "currencyDelegate"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "STFixerCommunicator"]
-- !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UIFocusEnvironment", "amountInputField"]
 - ["PSo18UIFocusEnvironment", "amountOutputField"]
 - ["PSo18UIFocusEnvironment", "audLbl"]
@@ -550,11 +534,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "updatedCurrency"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo10UIKeyInput", "adjustsFontSizeToFitWidth"]
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
-- !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -564,7 +546,6 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UITextField"]
-- !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - ["CSo11UIResponder", "amountInputField"]
 - ["CSo11UIResponder", "amountOutputField"]
 - ["CSo11UIResponder", "audLbl"]
@@ -617,14 +598,12 @@ depends-member:
 - ["PSo16UIStateRestoring", "updatedCurrency"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["CSo11UITextField", "adjustsFontSizeToFitWidth"]
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "STFixerCommunicator"]
 - !private ["PSo19UITextFieldDelegate", "amountInputField"]
 - !private ["PSo19UITextFieldDelegate", "amountOutputField"]
-- !private ["PSo19UITextFieldDelegate", "audLbl"]
 - !private ["PSo19UITextFieldDelegate", "calculateCurrencySymbol"]
 - !private ["PSo19UITextFieldDelegate", "calculateOutputAmount"]
 - !private ["PSo19UITextFieldDelegate", "currencyPickerView"]
@@ -641,16 +620,13 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "updateConvertedValue"]
 - ["PSo19UITextFieldDelegate", "updatedCurrency"]
 - ["PSo19UITextFieldDelegate", ""]
-- !private ["PSo11UITextInput", "adjustsFontSizeToFitWidth"]
 - !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
-- !private ["PSo17UITextInputTraits", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "STFixerCommunicator"]
-- !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - ["PSo18UITraitEnvironment", "amountInputField"]
 - ["PSo18UITraitEnvironment", "amountOutputField"]
 - ["PSo18UITraitEnvironment", "audLbl"]
@@ -678,7 +654,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "updatedCurrency"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
 - !private ["CSo6UIView", "currencyDelegate"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "resignFirstResponder"]
@@ -776,7 +751,6 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "stringByReplacingOccurrencesOfString"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "adjustsFontSizeToFitWidth"]
 - !private ["PSs12_Reflectable", "currencyDelegate"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "floatValue"]
