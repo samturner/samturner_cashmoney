@@ -20,10 +20,12 @@ class ViewController: UIViewController, UITextFieldDelegate, STCurrencyPickerVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        
-//        audLbl.adjustsFontSizeToFitWidth = true;
-//        amountInputField.adjustsFontSizeToFitWidth = true;
-//        amountOutputField.adjustsFontSizeToFitWidth = true;
+        
+        // Set up toolbar for the decimal pad keyboard
+        let numberToolbar = UIToolbar(frame: CGRectMake(0,0,self.view.frame.width,44))
+        numberToolbar.barStyle = UIBarStyle.Default
+        numberToolbar.items = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil), UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: "doneWithKeyboard")]
+        amountInputField.inputAccessoryView = numberToolbar;
         
         currencyPickerView.currencyDelegate = self;
         amountInputField.delegate = self;
@@ -53,13 +55,6 @@ class ViewController: UIViewController, UITextFieldDelegate, STCurrencyPickerVie
         }
     }
     
-    /**
-    Make sure to close the keyboard when 'done' is tapped
-    */
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder();
-        return true;
-    }
     
     // ...
     
@@ -85,6 +80,11 @@ class ViewController: UIViewController, UITextFieldDelegate, STCurrencyPickerVie
         let outputSymbol = calculateCurrencySymbol(selectedCurrency)
         
         amountOutputField.text = "\(outputSymbol) \(outputAmount)"
+    }
+    
+    // Close the keyboard for the decimal pad
+    func doneWithKeyboard() {
+        amountInputField.resignFirstResponder()
     }
     
     /**
